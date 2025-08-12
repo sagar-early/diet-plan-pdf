@@ -33,8 +33,8 @@ const Index = () => {
                     strokeDasharray="50.4 232.1" strokeDashoffset="-231.9" transform="rotate(-90 60 60)"/>
             
             {/* Kcal text in center */}
-            <text x="60" y="55" textAnchor="middle" fill="#ffffff" fontSize="20" fontWeight="bold">1400</text>
-            <text x="60" y="72" textAnchor="middle" fill="#ffffff" fontSize="12">Kcal</text>
+            <text x="60" y="55" textAnchor="middle" fill="#3a1f12" fontSize="20" fontWeight="bold">1400</text>
+            <text x="60" y="72" textAnchor="middle" fill="#3a1f12" fontSize="12">Kcal</text>
           </svg>
           
           {/* Macro labels horizontal */}
