@@ -7,23 +7,16 @@ const Index = () => {
       {/* Header */}
       <header className="ef-header">
         <div className="ef-header-inner">
-          <svg className="ef-logo" width="120" height="40" viewBox="0 0 120 40" aria-label="Early logo">
-            <text x="10" y="25" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="bold" fill="#ffffff">EARLY</text>
-            <text x="10" y="35" fontFamily="Arial, sans-serif" fontSize="8" fill="#ffffff">Health Pvt Ltd</text>
-          </svg>
+          <img className="ef-logo" src="/lovable-uploads/4e441377-31ea-4eb6-9cb3-6c94baada975.png" alt="Early logo" />
           <h1 className="ef-title">Diet Plan</h1>
         </div>
       </header>
 
       {/* Macro Summary */}
       <section className="ef-summary" aria-label="Daily nutritional summary">
-        <div className="ef-kcal-card">
-          <span className="ef-kcal-value">1400</span>
-          <span className="ef-kcal-unit">Kcal</span>
-        </div>
         <div className="ef-macros">
-          {/* Single combined macro circle */}
-          <svg className="ef-macro-circle" width="120" height="120" viewBox="0 0 120 120">
+          {/* Single combined macro circle with kcal in center */}
+          <svg className="ef-macro-circle" width="120" height="120" viewBox="0 0 120 120" aria-label="Macros: Protein 80g, Carbs 150g, Fats 50g; Total 1400 Kcal">
             {/* Background circle */}
             <circle cx="60" cy="60" r="45" fill="none" stroke="#dbdfd2" strokeWidth="8"/>
             
@@ -38,30 +31,25 @@ const Index = () => {
             {/* Fats segment (50g) - ~17.9% of 280g total */}
             <circle cx="60" cy="60" r="45" fill="none" stroke="#efd7b5" strokeWidth="8" 
                     strokeDasharray="50.4 232.1" strokeDashoffset="-231.9" transform="rotate(-90 60 60)"/>
+            
+            {/* Kcal text in center */}
+            <text x="60" y="55" textAnchor="middle" fill="#ffffff" fontSize="20" fontWeight="bold">1400</text>
+            <text x="60" y="72" textAnchor="middle" fill="#ffffff" fontSize="12">Kcal</text>
           </svg>
           
-          {/* Macro labels list */}
-          <div className="ef-macro-list">
-            <div className="ef-macro-item">
-              <div className="ef-macro-dot protein"></div>
-              <div className="ef-macro-text">
-                <span className="ef-macro-label">Protein</span>
-                <span className="ef-macro-value">80g</span>
-              </div>
+          {/* Macro labels horizontal */}
+          <div className="ef-macro-labels-horizontal">
+            <div className="ef-macro-label-item">
+              <span className="ef-macro-dot protein">•</span>
+              <span className="ef-macro-text">Protein <strong>80g</strong></span>
             </div>
-            <div className="ef-macro-item">
-              <div className="ef-macro-dot carbs"></div>
-              <div className="ef-macro-text">
-                <span className="ef-macro-label">Carbs</span>
-                <span className="ef-macro-value">150g</span>
-              </div>
+            <div className="ef-macro-label-item">
+              <span className="ef-macro-dot carbs">•</span>
+              <span className="ef-macro-text">Carbs <strong>150g</strong></span>
             </div>
-            <div className="ef-macro-item">
-              <div className="ef-macro-dot fats"></div>
-              <div className="ef-macro-text">
-                <span className="ef-macro-label">Fats</span>
-                <span className="ef-macro-value">50g</span>
-              </div>
+            <div className="ef-macro-label-item">
+              <span className="ef-macro-dot fats">•</span>
+              <span className="ef-macro-text">Fats <strong>50g</strong></span>
             </div>
           </div>
         </div>
