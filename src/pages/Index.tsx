@@ -1,8 +1,7 @@
 const Index = () => {
-  return (
-    <main className="ef-page">
+  return <main className="ef-page">
       {/* Close button - fixed position outside card */}
-      <button className="ef-close" aria-label="Close">×</button>
+      
       
       {/* Page 1 */}
       <div className="ef-page-content">
@@ -20,19 +19,16 @@ const Index = () => {
             {/* Single combined macro circle with kcal in center */}
             <svg className="ef-macro-circle" width="120" height="120" viewBox="0 0 120 120" aria-label="Macros: Protein 80g, Carbs 150g, Fats 50g; Total 1400 Kcal">
               {/* Background circle */}
-              <circle cx="60" cy="60" r="45" fill="none" stroke="#dbdfd2" strokeWidth="8"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#dbdfd2" strokeWidth="8" />
               
               {/* Protein segment (80g) - ~28.6% of 280g total */}
-              <circle cx="60" cy="60" r="45" fill="none" stroke="#9cd312" strokeWidth="8" 
-                      strokeDasharray="80.7 201.8" strokeDashoffset="0" transform="rotate(-90 60 60)"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#9cd312" strokeWidth="8" strokeDasharray="80.7 201.8" strokeDashoffset="0" transform="rotate(-90 60 60)" />
               
               {/* Carbs segment (150g) - ~53.6% of 280g total */}
-              <circle cx="60" cy="60" r="45" fill="none" stroke="#927b9e" strokeWidth="8" 
-                      strokeDasharray="151.2 131.3" strokeDashoffset="-80.7" transform="rotate(-90 60 60)"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#927b9e" strokeWidth="8" strokeDasharray="151.2 131.3" strokeDashoffset="-80.7" transform="rotate(-90 60 60)" />
               
               {/* Fats segment (50g) - ~17.9% of 280g total */}
-              <circle cx="60" cy="60" r="45" fill="none" stroke="#efd7b5" strokeWidth="8" 
-                      strokeDasharray="50.4 232.1" strokeDashoffset="-231.9" transform="rotate(-90 60 60)"/>
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#efd7b5" strokeWidth="8" strokeDasharray="50.4 232.1" strokeDashoffset="-231.9" transform="rotate(-90 60 60)" />
               
               {/* Kcal text in center */}
               <text x="60" y="55" textAnchor="middle" fill="#3a1f12" fontSize="20" fontWeight="bold">1400</text>
@@ -218,8 +214,6 @@ const Index = () => {
           </div>
         </div>
       </div>
-    </main>
-  );
+    </main>;
 };
-
 export default Index;
