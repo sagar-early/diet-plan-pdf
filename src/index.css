@@ -145,7 +145,7 @@ All colors MUST be HSL.
   }
 
   .ef-nutrition-summary-below {
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     background: white;
     border-radius: 12px;
     padding: 24px 20px;
@@ -364,7 +364,7 @@ All colors MUST be HSL.
   .ef-macros {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 22px;
   }
 
   .ef-macro-circle {
