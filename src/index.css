@@ -121,7 +121,7 @@ All colors MUST be HSL.
     background: #faf8f1;
     padding: 16px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    text-align: right;
+    text-align: left;
   }
 
   .ef-page-content {
@@ -151,7 +151,7 @@ All colors MUST be HSL.
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border: 1px solid hsl(var(--ef-green-200));
-    display: inline-block;
+    width: 100%;
   }
 
   .ef-logo {
@@ -217,7 +217,6 @@ All colors MUST be HSL.
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border: 1px solid hsl(var(--ef-green-200));
-    min-height: 320px;
     display: flex;
     flex-direction: column;
   }
@@ -236,7 +235,7 @@ All colors MUST be HSL.
     margin-bottom: 16px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 4px;
   }
 
@@ -364,10 +363,10 @@ All colors MUST be HSL.
   .ef-macro-labels-horizontal {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex: 1;
     padding: 0 16px;
-    gap: 24px;
+    gap: 32px;
   }
 
   .ef-macro-labels-vertical {
@@ -379,10 +378,9 @@ All colors MUST be HSL.
 
   .ef-macro-label-item {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 4px;
-    text-align: center;
+    gap: 8px;
+    text-align: left;
   }
 
   .ef-macro-dot {

@@ -43,18 +43,24 @@ const Index = () => {
             <div className="ef-macro-labels-horizontal">
               <div className="ef-macro-label-item">
                 <span className="ef-macro-dot protein">●</span>
-                <div className="ef-macro-text">Protein</div>
-                <div className="ef-macro-value">80g</div>
+                <div>
+                  <div className="ef-macro-text">Protein</div>
+                  <div className="ef-macro-value">80g</div>
+                </div>
               </div>
               <div className="ef-macro-label-item">
                 <span className="ef-macro-dot carbs">●</span>
-                <div className="ef-macro-text">Carbs</div>
-                <div className="ef-macro-value">150g</div>
+                <div>
+                  <div className="ef-macro-text">Carbs</div>
+                  <div className="ef-macro-value">150g</div>
+                </div>
               </div>
               <div className="ef-macro-label-item">
                 <span className="ef-macro-dot fats">●</span>
-                <div className="ef-macro-text">Fats</div>
-                <div className="ef-macro-value">50g</div>
+                <div>
+                  <div className="ef-macro-text">Fats</div>
+                  <div className="ef-macro-value">50g</div>
+                </div>
               </div>
             </div>
           </div>
