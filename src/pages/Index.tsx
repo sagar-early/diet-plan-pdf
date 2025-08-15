@@ -9,7 +9,7 @@ const Index = () => {
         {/* Full-width header card */}
         <div className="ef-header-card-full">
           <div className="ef-logo">
-            <img src="/white.png" alt="EARLY" className="ef-logo-image" />
+            <img src="/White.png" alt="EARLY" className="ef-logo-image" />
           </div>
           <h1 className="ef-header-title">Diet Plan</h1>
         </div>
