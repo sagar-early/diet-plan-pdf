@@ -163,8 +163,6 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Page 2 */}
-      <div className="ef-page-content ef-page-2">
         {/* Remaining 2 meal cards */}
         <div className="ef-meal-cards-grid">
           {/* Card 5: Dinner */}
@@ -183,8 +181,6 @@ const Index = () => {
                   <div className="ef-food-item">Ghiya chana dal – 1 Katori (128g) <span className="ef-kcal">90 Kcal</span></div>
                   <div className="ef-food-item">Urad dal – 1 Katori (125g) <span className="ef-kcal">101 Kcal</span></div>
                   <div className="ef-food-item">Brown rice cooked – 1 Bowl (164g) <span className="ef-kcal">185 Kcal</span></div>
-                  <div className="ef-food-item">Dal paneer – 1 Katori (129g) <span className="ef-kcal">155 Kcal</span></div>
-                  <div className="ef-food-item">Moong dal – 1 Katori (127g) <span className="ef-kcal">117 Kcal</span></div>
                 </div>
               </div>
               <div className="ef-meal-section">
@@ -211,7 +207,6 @@ const Index = () => {
             </p>
           </div>
         </div>
-      </div>
     </main>;
 };
 export default Index;
