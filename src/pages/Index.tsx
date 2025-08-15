@@ -9,7 +9,7 @@ const Index = () => {
         {/* Full-width header card */}
         <div className="ef-header-card-full">
           <div className="ef-logo">
-            <img src="/public/lovable-uploads/4e441377-31ea-4eb6-9cb3-6c94baada975.png" alt="EARLY" className="ef-logo-image" />
+            <img src="/white.png" alt="EARLY" className="ef-logo-image" />
           </div>
           <h1 className="ef-header-title">Diet Plan</h1>
         </div>
@@ -43,15 +43,18 @@ const Index = () => {
             <div className="ef-macro-labels-horizontal">
               <div className="ef-macro-label-item">
                 <span className="ef-macro-dot protein">●</span>
-                <span className="ef-macro-text">Protein <strong>80g</strong></span>
+                <div className="ef-macro-text">Protein</div>
+                <div className="ef-macro-value">80g</div>
               </div>
               <div className="ef-macro-label-item">
                 <span className="ef-macro-dot carbs">●</span>
-                <span className="ef-macro-text">Carbs <strong>150g</strong></span>
+                <div className="ef-macro-text">Carbs</div>
+                <div className="ef-macro-value">150g</div>
               </div>
               <div className="ef-macro-label-item">
                 <span className="ef-macro-dot fats">●</span>
-                <span className="ef-macro-text">Fats <strong>50g</strong></span>
+                <div className="ef-macro-text">Fats</div>
+                <div className="ef-macro-value">50g</div>
               </div>
             </div>
           </div>
@@ -62,15 +65,12 @@ const Index = () => {
           {/* Card 1: Pre-Breakfast */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Pre-Breakfast</h3>
-            <div className="ef-meal-time">06:30 – 07:00 | 80 kcal</div>
+            <div className="ef-meal-time">
+              <span>06:30 – 07:00</span>
+              <span>80 Kcal</span>
+            </div>
             
             <div className="ef-meal-sections">
-              <div className="ef-meal-section">
-                <h4 className="ef-section-title">Main Meals</h4>
-                <div className="ef-content-area">
-                  <p className="ef-empty-section">(none)</p>
-                </div>
-              </div>
               <div className="ef-meal-section">
                 <h4 className="ef-section-title">Sides</h4>
                 <div className="ef-content-area">
@@ -87,7 +87,10 @@ const Index = () => {
           {/* Card 2: Breakfast */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Breakfast</h3>
-            <div className="ef-meal-time">07:30 – 08:30 | 450 kcal</div>
+            <div className="ef-meal-time">
+              <span>07:30 – 08:30</span>
+              <span>450 Kcal</span>
+            </div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -114,7 +117,10 @@ const Index = () => {
           {/* Card 3: Lunch */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Lunch</h3>
-            <div className="ef-meal-time">12:30 – 13:30 | 400 kcal</div>
+            <div className="ef-meal-time">
+              <span>12:30 – 13:30</span>
+              <span>400 Kcal</span>
+            </div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -131,27 +137,18 @@ const Index = () => {
                   <div className="ef-food-item">Palak matar paneer subji – 1 Katori (122g) <span className="ef-kcal">167 Kcal</span></div>
                 </div>
               </div>
-              <div className="ef-meal-section">
-                <h4 className="ef-section-title">Sides</h4>
-                <div className="ef-content-area">
-                  <p className="ef-empty-section">(none)</p>
-                </div>
-              </div>
             </div>
           </div>
 
           {/* Card 4: Evening Snack */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Evening Snack</h3>
-            <div className="ef-meal-time">16:30 – 17:30 | 150 kcal</div>
+            <div className="ef-meal-time">
+              <span>16:30 – 17:30</span>
+              <span>150 Kcal</span>
+            </div>
             
             <div className="ef-meal-sections">
-              <div className="ef-meal-section">
-                <h4 className="ef-section-title">Main Meals</h4>
-                <div className="ef-content-area">
-                  <p className="ef-empty-section">(none)</p>
-                </div>
-              </div>
               <div className="ef-meal-section">
                 <h4 className="ef-section-title">Sides</h4>
                 <div className="ef-content-area">
@@ -173,7 +170,10 @@ const Index = () => {
           {/* Card 5: Dinner */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Dinner</h3>
-            <div className="ef-meal-time">19:30 – 21:00 | 400 kcal</div>
+            <div className="ef-meal-time">
+              <span>19:30 – 21:00</span>
+              <span>400 Kcal</span>
+            </div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -201,17 +201,12 @@ const Index = () => {
           {/* Card 6: Bedtime Snack */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Bedtime Snack</h3>
-            <div className="ef-meal-time">21:30 – 22:00</div>
+            <div className="ef-meal-time">
+              <span>21:30 – 22:00</span>
+            </div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
-                <h4 className="ef-section-title">Main Meals</h4>
-                <div className="ef-content-area">
-                  <p className="ef-empty-section">(fill actual if available)</p>
-                </div>
-              </div>
-              <div className="ef-meal-section">
-                <h4 className="ef-section-title">Sides</h4>
                 <div className="ef-content-area">
                   <p className="ef-empty-section">(fill actual if available)</p>
                 </div>

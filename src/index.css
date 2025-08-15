@@ -118,9 +118,10 @@ All colors MUST be HSL.
     max-width: 210mm;
     min-height: 297mm;
     margin: 0 auto;
-    background: hsl(var(--ef-cream));
+    background: #faf8f1;
     padding: 16px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    text-align: right;
   }
 
   .ef-page-content {
@@ -145,6 +146,12 @@ All colors MUST be HSL.
 
   .ef-nutrition-summary-below {
     margin-bottom: 32px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid hsl(var(--ef-green-200));
+    display: inline-block;
   }
 
   .ef-logo {
@@ -229,12 +236,8 @@ All colors MUST be HSL.
     margin-bottom: 16px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 4px;
-  }
-
-  .ef-meal-time::before {
-    content: "🕐";
-    font-size: 12px;
   }
 
   .ef-meal-sections {
@@ -267,7 +270,7 @@ All colors MUST be HSL.
 
   /* Cheat Meal Card */
   .ef-cheat-meal-card {
-    background: linear-gradient(135deg, #d2f47e, #927b9e);
+    background: linear-gradient(135deg, #927b9e, #d2f47e);
     border-radius: 12px;
     padding: 24px;
     display: flex;
@@ -364,6 +367,7 @@ All colors MUST be HSL.
     justify-content: space-between;
     flex: 1;
     padding: 0 16px;
+    gap: 24px;
   }
 
   .ef-macro-labels-vertical {
@@ -375,8 +379,10 @@ All colors MUST be HSL.
 
   .ef-macro-label-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
+    text-align: center;
   }
 
   .ef-macro-dot {
@@ -399,6 +405,13 @@ All colors MUST be HSL.
   .ef-macro-text {
     font-size: 14px;
     color: #3a1f12;
+    font-weight: 600;
+  }
+  
+  .ef-macro-value {
+    font-size: 14px;
+    color: #3a1f12;
+    font-weight: normal;
   }
 
   /* Removed Guiding Principles section as per new specs */
