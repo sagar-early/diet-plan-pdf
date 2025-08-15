@@ -364,7 +364,7 @@ All colors MUST be HSL.
   .ef-macros {
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 10px;
   }
 
   .ef-macro-circle {
