@@ -15,7 +15,7 @@ const Index = () => {
         <div className="ef-nutrition-summary-below">
           <div className="ef-macros">
             {/* Single combined macro circle with kcal in center */}
-            <svg width="120" height="120" viewBox="0 0 120 120" aria-label="Macros: Protein 80g, Carbs 150g, Fats 50g; Total 1400 Kcal" className="ef-macro-circle mx-[5px] my-[5px] py-[5px] px-[10px]">
+            <svg width="120" height="120" viewBox="0 0 120 120" aria-label="Macros: Protein 80g, Carbs 150g, Fats 50g; Total 1400 Kcal" className="ef-macro-circle mx-[2px] my-[2px] py-[2px] px-[4px]">
               {/* Background circle */}
               <circle cx="60" cy="60" r="45" fill="none" stroke="#dbdfd2" strokeWidth="8" />
               
