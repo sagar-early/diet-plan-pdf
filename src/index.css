@@ -136,7 +136,7 @@ All colors MUST be HSL.
   .ef-header-card-full {
     background: #434a35;
     border-radius: 12px;
-    padding: 18px 24px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -148,14 +148,16 @@ All colors MUST be HSL.
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 24px;
+    height: 50%;
+    min-height: 80px;
   }
 
   .ef-header-nutrition {
-    flex: 1;
+    height: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 20px;
   }
 
   .ef-logo-image {
@@ -177,7 +179,7 @@ All colors MUST be HSL.
   /* Responsive header card positioning */
   @media (max-width: 1024px) {
     .ef-header-card-full {
-      padding: 16px 20px;
+      padding: 20px;
       min-height: 180px;
     }
     
@@ -185,24 +187,45 @@ All colors MUST be HSL.
       height: 32px;
     }
 
+    .ef-header-top {
+      min-height: 70px;
+    }
+
+    .ef-header-nutrition {
+      padding-left: 16px;
+    }
+
     .ef-macros-in-header {
-      gap: 24px;
+      gap: 32px;
+    }
+
+    .ef-macro-labels-vertical-header {
+      gap: 16px;
     }
   }
 
   @media (max-width: 768px) {
     .ef-header-card-full {
-      padding: 14px 16px;
-      min-height: 160px;
+      padding: 16px;
+      min-height: 200px;
     }
     
     .ef-logo-image {
       height: 28px;
     }
 
+    .ef-header-top {
+      min-height: 60px;
+    }
+
+    .ef-header-nutrition {
+      padding-left: 0;
+      justify-content: center;
+    }
+
     .ef-macros-in-header {
       flex-direction: column;
-      gap: 16px;
+      gap: 20px;
       align-items: center;
     }
 
@@ -386,13 +409,17 @@ All colors MUST be HSL.
   .ef-macros-in-header {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 40px;
+  }
+
+  .ef-macro-circle {
+    flex-shrink: 0;
   }
 
   .ef-macro-labels-vertical-header {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 18px;
   }
 
   .ef-macro-text-header {
