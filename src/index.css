@@ -156,8 +156,9 @@ All colors MUST be HSL.
 
   .ef-logo {
     position: absolute;
-    top: 18px;
+    top: 50%;
     left: 24px;
+    transform: translateY(-50%);
     z-index: 10;
   }
 
@@ -179,11 +180,12 @@ All colors MUST be HSL.
 
   .ef-header-title {
     font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
-    margin-left: calc(24px + 60px + 16px); /* logo left padding + estimated logo width + gap */
-    padding-top: 18px;
-    display: flex;
-    align-items: center;
-    height: 36px;
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    margin: 0;
+    text-align: right;
     font-size: 24px;
     font-weight: 600;
     color: white;
@@ -193,7 +195,6 @@ All colors MUST be HSL.
   /* Responsive logo and title positioning */
   @media (max-width: 1024px) {
     .ef-logo {
-      top: 16px;
       left: 20px;
     }
     
@@ -202,15 +203,12 @@ All colors MUST be HSL.
     }
     
     .ef-header-title {
-      margin-left: calc(20px + 54px + 14px); /* logo left padding + estimated logo width + gap */
-      padding-top: 16px;
-      height: 32px;
+      right: 20px;
     }
   }
 
   @media (max-width: 768px) {
     .ef-logo {
-      top: 14px;
       left: 16px;
     }
     
@@ -219,9 +217,7 @@ All colors MUST be HSL.
     }
     
     .ef-header-title {
-      margin-left: calc(16px + 47px + 12px); /* logo left padding + estimated logo width + gap */
-      padding-top: 14px;
-      height: 28px;
+      right: 16px;
     }
   }
 
