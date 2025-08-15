@@ -363,10 +363,9 @@ All colors MUST be HSL.
   .ef-macro-labels-horizontal {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     flex: 1;
     padding: 0 16px;
-    gap: 32px;
   }
 
   .ef-macro-labels-vertical {
