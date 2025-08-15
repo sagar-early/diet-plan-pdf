@@ -104,10 +104,10 @@ All colors MUST be HSL.
 
 @media print {
   @page {
-    margin: 0;
+    margin: 10px;
   }
   body {
-    margin: 0;
+    margin: 10px;
   }
 }
 
