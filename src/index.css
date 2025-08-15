@@ -141,14 +141,14 @@ All colors MUST be HSL.
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
   }
 
   .ef-nutrition-summary-below {
     margin-bottom: 10px;
     background: white;
     border-radius: 12px;
-    padding: 1px 5px;
+    padding: 1px 1px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border: 1px solid hsl(var(--ef-green-200));
     width: 100%;
@@ -173,7 +173,7 @@ All colors MUST be HSL.
   /* Responsive header card positioning */
   @media (max-width: 1024px) {
     .ef-header-card-full {
-      padding: 16px 20px;
+      padding: 8px 10px;
     }
     
     .ef-logo-image {
@@ -183,7 +183,7 @@ All colors MUST be HSL.
 
   @media (max-width: 768px) {
     .ef-header-card-full {
-      padding: 14px 16px;
+      padding: 7px 8px;
     }
     
     .ef-logo-image {
@@ -218,20 +218,20 @@ All colors MUST be HSL.
   /* Meal Cards Grid */
   .ef-meal-cards-grid {
     column-count: 2;
-    column-gap: 24px;
-    margin-bottom: 32px;
+    column-gap: 12px;
+    margin-bottom: 16px;
   }
 
   .ef-meal-card {
     background: #ffffff;
     border-radius: 12px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border: 1px solid hsl(var(--ef-green-200));
     display: flex;
     flex-direction: column;
     break-inside: avoid;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
   }
 
   .ef-meal-title {
