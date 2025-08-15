@@ -4,17 +4,15 @@ const Index = () => {
       {/* Close button - fixed position outside card */}
       <button className="ef-close" aria-label="Close">×</button>
       
-      {/* Header */}
-      <header className="ef-header">
-        <div className="ef-header-inner">
-          <img className="ef-logo" src="/lovable-uploads/4e441377-31ea-4eb6-9cb3-6c94baada975.png" alt="Early logo" />
-          <h1 className="ef-title">Diet Plan</h1>
-        </div>
-      </header>
+      {/* Page Title - Right Aligned */}
+      <div className="ef-page-title">
+        <img className="ef-logo" src="/lovable-uploads/4e441377-31ea-4eb6-9cb3-6c94baada975.png" alt="Early logo" />
+        <h1 className="ef-main-title">Diet Plan</h1>
+      </div>
 
-      {/* Macro Summary */}
-      <section className="ef-summary" aria-label="Daily nutritional summary">
-        <div className="ef-macros">
+      {/* Macro Summary - Right Aligned */}
+      <section className="ef-summary-right" aria-label="Daily nutritional summary">
+        <div className="ef-macros-right">
           {/* Single combined macro circle with kcal in center */}
           <svg className="ef-macro-circle" width="120" height="120" viewBox="0 0 120 120" aria-label="Macros: Protein 80g, Carbs 150g, Fats 50g; Total 1400 Kcal">
             {/* Background circle */}
@@ -37,8 +35,8 @@ const Index = () => {
             <text x="60" y="72" textAnchor="middle" fill="#3a1f12" fontSize="12">Kcal</text>
           </svg>
           
-          {/* Macro labels horizontal */}
-          <div className="ef-macro-labels-horizontal">
+          {/* Macro labels vertical */}
+          <div className="ef-macro-labels-vertical">
             <div className="ef-macro-label-item">
               <span className="ef-macro-dot protein">•</span>
               <span className="ef-macro-text">Protein <strong>80g</strong></span>
@@ -66,17 +64,17 @@ const Index = () => {
           <span className="ef-kcal">80 kcal</span>
         </div>
 
-        <div className="ef-meal-subsections">
-          {/* Main Meals */}
-          <div className="ef-meal-subsection">
+        <div className="ef-meal-columns">
+          {/* Left Half: Main Meals */}
+          <div className="ef-meal-column">
             <h3 className="ef-category-title">Main Meals</h3>
             <ul className="ef-food-list">
               {/* Empty - no main meals for pre-breakfast */}
             </ul>
           </div>
 
-          {/* Sides */}
-          <div className="ef-meal-subsection">
+          {/* Right Half: Sides (including drinks) */}
+          <div className="ef-meal-column">
             <h3 className="ef-category-title">Sides</h3>
             <ul className="ef-food-list">
               <li className="ef-food">
@@ -93,13 +91,6 @@ const Index = () => {
                 </div>
                 <span className="ef-food-kcal">12 Kcal</span>
               </li>
-            </ul>
-          </div>
-
-          {/* Drinks */}
-          <div className="ef-meal-subsection">
-            <h3 className="ef-category-title">Drinks</h3>
-            <ul className="ef-food-list">
               <li className="ef-food">
                 <div className="ef-food-content">
                   <span className="ef-food-name">Green tea with mint</span>
@@ -136,9 +127,9 @@ const Index = () => {
           <span className="ef-kcal">450 kcal</span>
         </div>
 
-        <div className="ef-meal-subsections">
-          {/* Main Meals */}
-          <div className="ef-meal-subsection">
+        <div className="ef-meal-columns">
+          {/* Left Half: Main Meals */}
+          <div className="ef-meal-column">
             <h3 className="ef-category-title">Main Meals</h3>
             <ul className="ef-food-list">
               <li className="ef-food">
@@ -172,8 +163,8 @@ const Index = () => {
             </ul>
           </div>
 
-          {/* Sides */}
-          <div className="ef-meal-subsection">
+          {/* Right Half: Sides (including drinks) */}
+          <div className="ef-meal-column">
             <h3 className="ef-category-title">Sides</h3>
             <ul className="ef-food-list">
               <li className="ef-food">
@@ -190,13 +181,6 @@ const Index = () => {
                 </div>
                 <span className="ef-food-kcal">52 Kcal</span>
               </li>
-            </ul>
-          </div>
-
-          {/* Drinks */}
-          <div className="ef-meal-subsection">
-            <h3 className="ef-category-title">Drinks</h3>
-            <ul className="ef-food-list">
               <li className="ef-food">
                 <div className="ef-food-content">
                   <span className="ef-food-name">Coffee (With milk)</span>
@@ -226,9 +210,9 @@ const Index = () => {
           <span className="ef-kcal">500 kcal</span>
         </div>
 
-        <div className="ef-meal-subsections">
-          {/* Main Meals */}
-          <div className="ef-meal-subsection">
+        <div className="ef-meal-columns">
+          {/* Left Half: Main Meals */}
+          <div className="ef-meal-column">
             <h3 className="ef-category-title">Main Meals</h3>
             <ul className="ef-food-list">
               <li className="ef-food">
@@ -255,8 +239,8 @@ const Index = () => {
             </ul>
           </div>
 
-          {/* Sides */}
-          <div className="ef-meal-subsection">
+          {/* Right Half: Sides (including drinks) */}
+          <div className="ef-meal-column">
             <h3 className="ef-category-title">Sides</h3>
             <ul className="ef-food-list">
               <li className="ef-food">
@@ -280,13 +264,6 @@ const Index = () => {
                 </div>
                 <span className="ef-food-kcal">64 Kcal</span>
               </li>
-            </ul>
-          </div>
-
-          {/* Drinks */}
-          <div className="ef-meal-subsection">
-            <h3 className="ef-category-title">Drinks</h3>
-            <ul className="ef-food-list">
               <li className="ef-food">
                 <div className="ef-food-content">
                   <span className="ef-food-name">Buttermilk</span>
@@ -316,17 +293,17 @@ const Index = () => {
           <span className="ef-kcal">150 kcal</span>
         </div>
 
-        <div className="ef-meal-subsections">
-          {/* Main Meals */}
-          <div className="ef-meal-subsection">
+        <div className="ef-meal-columns">
+          {/* Left Half: Main Meals */}
+          <div className="ef-meal-column">
             <h3 className="ef-category-title">Main Meals</h3>
             <ul className="ef-food-list">
               {/* Empty - no main meals for evening snack */}
             </ul>
           </div>
 
-          {/* Sides */}
-          <div className="ef-meal-subsection">
+          {/* Right Half: Sides (including drinks) */}
+          <div className="ef-meal-column">
             <h3 className="ef-category-title">Sides</h3>
             <ul className="ef-food-list">
               <li className="ef-food">
@@ -350,13 +327,6 @@ const Index = () => {
                 </div>
                 <span className="ef-food-kcal">56 Kcal</span>
               </li>
-            </ul>
-          </div>
-
-          {/* Drinks */}
-          <div className="ef-meal-subsection">
-            <h3 className="ef-category-title">Drinks</h3>
-            <ul className="ef-food-list">
               <li className="ef-food">
                 <div className="ef-food-content">
                   <span className="ef-food-name">Chai (Tea with sugar)</span>
@@ -379,9 +349,9 @@ const Index = () => {
           <span className="ef-kcal">400 kcal</span>
         </div>
 
-        <div className="ef-meal-subsections">
-          {/* Main Meals */}
-          <div className="ef-meal-subsection">
+        <div className="ef-meal-columns">
+          {/* Left Half: Main Meals */}
+          <div className="ef-meal-column">
             <h3 className="ef-category-title">Main Meals</h3>
             <ul className="ef-food-list">
               <li className="ef-food">
@@ -429,8 +399,8 @@ const Index = () => {
             </ul>
           </div>
 
-          {/* Sides */}
-          <div className="ef-meal-subsection">
+          {/* Right Half: Sides */}
+          <div className="ef-meal-column">
             <h3 className="ef-category-title">Sides</h3>
             <ul className="ef-food-list">
               <li className="ef-food">
@@ -454,14 +424,6 @@ const Index = () => {
                 </div>
                 <span className="ef-food-kcal">48 Kcal</span>
               </li>
-            </ul>
-          </div>
-
-          {/* Drinks */}
-          <div className="ef-meal-subsection">
-            <h3 className="ef-category-title">Drinks</h3>
-            <ul className="ef-food-list">
-              {/* Empty - no drinks for dinner */}
             </ul>
           </div>
         </div>
