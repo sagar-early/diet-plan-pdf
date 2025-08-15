@@ -260,7 +260,7 @@ All colors MUST be HSL.
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
 
   .ef-time {
@@ -294,7 +294,7 @@ All colors MUST be HSL.
     font-size: 16px;
     font-weight: 700;
     color: hsl(var(--ef-green-900));
-    margin: 24px 0 12px 0;
+    margin: 8px 0 12px 0;
     padding-bottom: 8px;
     border-bottom: 1px solid hsl(var(--ef-green-200));
   }
@@ -308,7 +308,7 @@ All colors MUST be HSL.
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
-    margin-top: 20px;
+    margin-top: 8px;
   }
 
   .ef-meal-column {
