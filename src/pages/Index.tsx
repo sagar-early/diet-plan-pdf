@@ -163,8 +163,6 @@ const Index = () => {
         </div>
       </div>
 
-        {/* Remaining 2 meal cards */}
-        <div className="ef-meal-cards-grid">
           {/* Card 5: Dinner */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Dinner</h3>
@@ -192,7 +190,6 @@ const Index = () => {
                 </div>
               </div>
             </div>
-          </div>
 
         </div>
 
