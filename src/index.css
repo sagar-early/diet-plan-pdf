@@ -155,12 +155,18 @@ All colors MUST be HSL.
   }
 
   .ef-logo {
-    flex-shrink: 0;
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    z-index: 10;
   }
 
   .ef-logo-image {
-    height: 32px;
+    height: 36px;
     width: auto;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
   }
 
   .ef-logo-text {
@@ -173,10 +179,50 @@ All colors MUST be HSL.
 
   .ef-header-title {
     font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    margin-left: calc(24px + 60px + 16px); /* logo left padding + estimated logo width + gap */
+    padding-top: 18px;
+    display: flex;
+    align-items: center;
+    height: 36px;
     font-size: 24px;
     font-weight: 600;
     color: white;
     margin: 0;
+  }
+
+  /* Responsive logo and title positioning */
+  @media (max-width: 1024px) {
+    .ef-logo {
+      top: 16px;
+      left: 20px;
+    }
+    
+    .ef-logo-image {
+      height: 32px;
+    }
+    
+    .ef-header-title {
+      margin-left: calc(20px + 54px + 14px); /* logo left padding + estimated logo width + gap */
+      padding-top: 16px;
+      height: 32px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ef-logo {
+      top: 14px;
+      left: 16px;
+    }
+    
+    .ef-logo-image {
+      height: 28px;
+    }
+    
+    .ef-header-title {
+      margin-left: calc(16px + 47px + 12px); /* logo left padding + estimated logo width + gap */
+      padding-top: 14px;
+      height: 28px;
+    }
   }
 
   .ef-food-item {
