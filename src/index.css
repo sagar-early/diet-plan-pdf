@@ -138,20 +138,24 @@ All colors MUST be HSL.
     border-radius: 12px;
     padding: 18px 24px;
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 24px;
+    min-height: 200px;
+  }
+
+  .ef-header-top {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     margin-bottom: 24px;
   }
 
-  .ef-nutrition-summary-below {
-    margin-bottom: 32px;
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border: 1px solid hsl(var(--ef-green-200));
-    width: 100%;
+  .ef-header-nutrition {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .ef-logo-image {
@@ -174,20 +178,38 @@ All colors MUST be HSL.
   @media (max-width: 1024px) {
     .ef-header-card-full {
       padding: 16px 20px;
+      min-height: 180px;
     }
     
     .ef-logo-image {
       height: 32px;
+    }
+
+    .ef-macros-in-header {
+      gap: 24px;
     }
   }
 
   @media (max-width: 768px) {
     .ef-header-card-full {
       padding: 14px 16px;
+      min-height: 160px;
     }
     
     .ef-logo-image {
       height: 28px;
+    }
+
+    .ef-macros-in-header {
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .ef-macro-labels-vertical-header {
+      flex-direction: row;
+      justify-content: center;
+      gap: 24px;
     }
   }
 
@@ -361,29 +383,28 @@ All colors MUST be HSL.
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   }
 
-  .ef-macros {
+  .ef-macros-in-header {
     display: flex;
     align-items: center;
     gap: 32px;
   }
 
-  .ef-macro-circle {
-    flex-shrink: 0;
-  }
-
-  .ef-macro-labels-horizontal {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex: 1;
-    padding: 0 16px;
-  }
-
-  .ef-macro-labels-vertical {
+  .ef-macro-labels-vertical-header {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    padding-left: 24px;
+    gap: 16px;
+  }
+
+  .ef-macro-text-header {
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .ef-macro-value-header {
+    font-size: 14px;
+    color: white;
+    font-weight: normal;
   }
 
   .ef-macro-label-item {
