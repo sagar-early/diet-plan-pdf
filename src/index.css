@@ -123,26 +123,80 @@ All colors MUST be HSL.
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
-  /* Page Title - Right Aligned */
+  /* Page Header */
+  .ef-page-header {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+
   .ef-page-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 24px;
-    padding: 0 8px;
-  }
-
-  .ef-logo {
-    width: 80px;
-    height: auto;
-  }
-
-  .ef-main-title {
-    font-size: 28px;
-    font-weight: 700;
-    color: hsl(var(--ef-green-900));
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: hsl(var(--ef-espresso));
     margin: 0;
-    font-family: 'Satoshi', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Cards Grid */
+  .ef-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .ef-cards-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Individual Cards */
+  .ef-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid hsl(var(--ef-green-200));
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ef-nutrition-card {
+    justify-content: center;
+  }
+
+  .ef-meal-card {
+    justify-content: space-between;
+  }
+
+  /* Card Halves (for meal cards) */
+  .ef-card-half {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+  }
+
+  .ef-card-divider {
+    height: 1px;
+    background: hsl(var(--ef-green-200));
+    margin: 12px 0;
+  }
+
+  .ef-section-title {
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(var(--ef-green-900));
+    margin: 0 0 12px 0;
+  }
+
+  .ef-content-area {
+    flex: 1;
+    min-height: 60px;
   }
 
   .ef-close {
@@ -169,33 +223,38 @@ All colors MUST be HSL.
     transform: scale(1.1);
   }
 
-  /* Summary Section - Right Aligned */
-  .ef-summary-right {
+  /* Summary Section */
+  .ef-summary {
     background: white;
     border-radius: 16px;
     padding: 20px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    display: flex;
-    justify-content: flex-end;
   }
 
-  .ef-macros-right {
+  .ef-macros {
     display: flex;
     align-items: center;
     gap: 32px;
-    max-width: 400px;
   }
 
   .ef-macro-circle {
     flex-shrink: 0;
   }
 
+  .ef-macro-labels-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0 16px;
+  }
+
   .ef-macro-labels-vertical {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding-left: 16px;
+    padding-left: 24px;
   }
 
   .ef-macro-label-item {
@@ -234,10 +293,9 @@ All colors MUST be HSL.
   .ef-meal {
     background: white;
     border-radius: 16px;
-    padding: 24px;
-    margin-bottom: 20px;
+    padding: 20px;
+    margin-bottom: 16px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    page-break-inside: avoid;
   }
 
   .ef-meal-header {
@@ -260,7 +318,7 @@ All colors MUST be HSL.
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
   }
 
   .ef-time {
@@ -294,7 +352,7 @@ All colors MUST be HSL.
     font-size: 16px;
     font-weight: 700;
     color: hsl(var(--ef-green-900));
-    margin: 8px 0 12px 0;
+    margin: 24px 0 12px 0;
     padding-bottom: 8px;
     border-bottom: 1px solid hsl(var(--ef-green-200));
   }
@@ -303,15 +361,15 @@ All colors MUST be HSL.
     font-size: 16px;
   }
 
-  /* Meal columns layout - Two equal halves */
-  .ef-meal-columns {
+  /* Meal subsections layout */
+  .ef-meal-subsections {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    margin-top: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 20px;
   }
 
-  .ef-meal-column {
+  .ef-meal-subsection {
     display: flex;
     flex-direction: column;
   }
@@ -450,61 +508,21 @@ All colors MUST be HSL.
     }
   }
 
-  /* Print Styles - Optimized for A4 */
+  /* Print Styles */
   @media print {
     .ef-page {
       max-width: none;
       margin: 0;
-      padding: 12mm;
+      padding: 15mm;
       box-shadow: none;
-      font-size: 11px;
-    }
-
-    .ef-page-title {
-      margin-bottom: 16px;
-    }
-
-    .ef-main-title {
-      font-size: 22px;
-    }
-
-    .ef-summary-right {
-      margin-bottom: 16px;
-      padding: 16px;
     }
 
     .ef-meal {
       page-break-inside: avoid;
-      padding: 16px;
-      margin-bottom: 12px;
-    }
-
-    .ef-meal-title {
-      font-size: 16px;
-    }
-
-    .ef-category-title {
-      font-size: 14px;
-      margin: 16px 0 8px 0;
-    }
-
-    .ef-food-name {
-      font-size: 12px;
-    }
-
-    .ef-food-meta,
-    .ef-food-kcal {
-      font-size: 10px;
     }
 
     .ef-cheat-meal {
       page-break-inside: avoid;
-      padding: 16px;
-      margin-bottom: 12px;
-    }
-
-    .ef-close {
-      display: none;
     }
   }
 }
