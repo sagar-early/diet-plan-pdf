@@ -80,7 +80,7 @@ const Index = () => {
               <div className="ef-meal-section">
                 <h4 className="ef-section-title">Sides</h4>
                 <div className="ef-content-area">
-                  <div className="ef-food-item">Almonds – 5 Piece (2g) <span className="kcal">12 Kcal</span></div>
+                  <div className="ef-food-item">Almonds – 5 Piece (2g) <span className="ef-kcal">12 Kcal</span></div>
                   <div className="ef-food-item">Cashews (Cashew nuts, salted) – 5 Piece (2g) <span className="ef-kcal">12 Kcal</span></div>
                   <div className="ef-food-item">Green tea with mint – 1 Cup (150ml) <span className="ef-kcal">16 Kcal</span></div>
                   <div className="ef-food-item">Mint tea without sugar – 1 Cup (150ml) <span className="ef-kcal">1 Kcal</span></div>
