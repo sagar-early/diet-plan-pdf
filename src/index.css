@@ -136,7 +136,7 @@ All colors MUST be HSL.
   .ef-header-card-full {
     background: #434a35;
     border-radius: 12px;
-    padding: 20px 32px;
+    padding: 18px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -154,13 +154,6 @@ All colors MUST be HSL.
     width: 100%;
   }
 
-  .ef-logo {
-    position: absolute;
-    top: 18px;
-    left: 24px;
-    z-index: 10;
-  }
-
   .ef-logo-image {
     height: 36px;
     width: auto;
@@ -169,58 +162,31 @@ All colors MUST be HSL.
     image-rendering: crisp-edges;
   }
 
-  .ef-logo-text {
-    color: white;
-    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-  }
-
   .ef-header-title {
     font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
-    margin-left: calc(24px + 60px + 16px); /* logo left padding + estimated logo width + gap */
-    padding-top: 18px;
-    display: flex;
-    align-items: center;
-    height: 36px;
     font-size: 24px;
     font-weight: 600;
     color: white;
     margin: 0;
   }
 
-  /* Responsive logo and title positioning */
+  /* Responsive header card positioning */
   @media (max-width: 1024px) {
-    .ef-logo {
-      top: 16px;
-      left: 20px;
+    .ef-header-card-full {
+      padding: 16px 20px;
     }
     
     .ef-logo-image {
-      height: 32px;
-    }
-    
-    .ef-header-title {
-      margin-left: calc(20px + 54px + 14px); /* logo left padding + estimated logo width + gap */
-      padding-top: 16px;
       height: 32px;
     }
   }
 
   @media (max-width: 768px) {
-    .ef-logo {
-      top: 14px;
-      left: 16px;
+    .ef-header-card-full {
+      padding: 14px 16px;
     }
     
     .ef-logo-image {
-      height: 28px;
-    }
-    
-    .ef-header-title {
-      margin-left: calc(16px + 47px + 12px); /* logo left padding + estimated logo width + gap */
-      padding-top: 14px;
       height: 28px;
     }
   }

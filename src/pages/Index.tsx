@@ -7,9 +7,7 @@ const Index = () => {
       <div className="ef-page-content">
         {/* Full-width header card */}
         <div className="ef-header-card-full">
-          <div className="ef-logo">
-            <img src="/lovable-uploads/0242591f-7d18-4965-b926-4eb435d18037.png" alt="EARLY logo" className="ef-logo-image" />
-          </div>
+          <img src="/lovable-uploads/0518c066-6a07-4c02-a451-7aa1394cfa2a.png" alt="EARLY logo" className="ef-logo-image" />
           <h1 className="ef-header-title">Diet Plan</h1>
         </div>
         
