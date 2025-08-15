@@ -642,10 +642,19 @@ All colors MUST be HSL.
 
   /* Print Styles */
   @media print {
+    @page {
+      margin: 2px;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
     .ef-page {
       max-width: none;
       margin: 0;
-      padding: 15mm;
+      padding: 2px;
       box-shadow: none;
     }
 
