@@ -102,6 +102,16 @@ All colors MUST be HSL.
   }
 }
 
+@media print {
+  @page {
+    margin: 0;
+  }
+  body {
+    margin: 0;
+  }
+}
+
+
 @layer base {
   * {
     @apply border-border;
