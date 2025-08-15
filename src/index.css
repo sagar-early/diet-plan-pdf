@@ -123,67 +123,112 @@ All colors MUST be HSL.
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
-  /* Page Header */
-  .ef-page-header {
-    text-align: right;
-    margin-bottom: 20px;
+  .ef-page-content {
+    margin-bottom: 40px;
   }
 
-  .ef-page-title {
+  .ef-page-2 {
+    page-break-before: always;
+  }
+
+  /* Header Section */
+  .ef-header-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+
+  .ef-header-card {
+    background: #434a35;
+    border-radius: 12px;
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 280px;
+    flex: 0 0 auto;
+  }
+
+  .ef-logo {
+    flex-shrink: 0;
+  }
+
+  .ef-logo-text {
+    color: white;
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .ef-header-title {
     font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color: hsl(var(--ef-espresso));
+    color: white;
     margin: 0;
   }
 
-  /* Cards Grid */
-  .ef-cards-grid {
+  /* Nutrition Summary */
+  .ef-nutrition-summary {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  /* Meal Cards Grid */
+  .ef-meal-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
   }
 
-  @media (min-width: 768px) {
-    .ef-cards-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  /* Individual Cards */
-  .ef-card {
+  .ef-meal-card {
     background: #ffffff;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border: 1px solid hsl(var(--ef-green-200));
-    min-height: 280px;
+    min-height: 320px;
     display: flex;
     flex-direction: column;
   }
 
-  .ef-nutrition-card {
-    justify-content: center;
+  .ef-meal-title {
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: hsl(var(--ef-green-900));
+    margin: 0 0 8px 0;
   }
 
-  .ef-meal-card {
-    justify-content: space-between;
+  .ef-meal-time {
+    font-size: 14px;
+    color: hsl(var(--ef-green-600));
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
 
-  /* Card Halves (for meal cards) */
-  .ef-card-half {
+  .ef-meal-time::before {
+    content: "🕐";
+    font-size: 12px;
+  }
+
+  .ef-meal-sections {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 16px;
+  }
+
+  .ef-meal-section {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 8px 0;
-  }
-
-  .ef-card-divider {
-    height: 1px;
-    background: hsl(var(--ef-green-200));
-    margin: 12px 0;
   }
 
   .ef-section-title {
@@ -192,11 +237,63 @@ All colors MUST be HSL.
     font-weight: 600;
     color: hsl(var(--ef-green-900));
     margin: 0 0 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid hsl(var(--ef-green-200));
   }
 
   .ef-content-area {
     flex: 1;
-    min-height: 60px;
+    min-height: 80px;
+  }
+
+  /* Cheat Meal Card */
+  .ef-cheat-meal-card {
+    background: linear-gradient(135deg, #d2f47e, #927b9e);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 24px;
+  }
+
+  .ef-cheat-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+
+  .ef-cheat-content {
+    flex: 1;
+  }
+
+  .ef-cheat-title {
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(var(--ef-espresso));
+    margin: 0 0 4px 0;
+  }
+
+  .ef-cheat-time {
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(var(--ef-espresso));
+    margin: 0 0 8px 0;
+  }
+
+  .ef-cheat-description {
+    font-size: 14px;
+    color: hsl(var(--ef-espresso));
+    margin: 0;
+    line-height: 1.4;
   }
 
   .ef-close {
