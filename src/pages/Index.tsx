@@ -204,21 +204,6 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Card 6: Bedtime Snack */}
-          <div className="ef-meal-card">
-            <h3 className="ef-meal-title">Bedtime Snack</h3>
-            <div className="ef-meal-time">
-              <span>21:30 – 22:00</span>
-            </div>
-            
-            <div className="ef-meal-sections">
-              <div className="ef-meal-section">
-                <div className="ef-content-area">
-                  <p className="ef-empty-section">(fill actual if available)</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Cheat Meal Card */}

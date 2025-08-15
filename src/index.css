@@ -467,11 +467,6 @@ All colors MUST be HSL.
     gap: 4px;
   }
 
-  .ef-kcal::before {
-    content: "🔥";
-    font-size: 12px;
-  }
-
   /* Category Titles */
   .ef-category-title {
     font-size: 16px;
