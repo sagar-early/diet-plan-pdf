@@ -11,7 +11,7 @@ const Index = () => {
           
           <div className="ef-nutrition-chart">
             {/* Single combined macro circle with kcal in center */}
-            <svg className="ef-macro-circle-premium" width="150" height="150" viewBox="0 0 120 120" aria-label="Macros: Protein 80g, Carbs 150g, Fats 50g; Total 1400 Kcal">
+            <svg className="ef-macro-circle-premium" width="90" height="90" viewBox="0 0 120 120" aria-label="Macros: Protein 80g, Carbs 150g, Fats 50g; Total 1400 Kcal">
               <defs>
                 <filter id="circle-shadow" x="-20%" y="-20%" width="140%" height="140%">
                   <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="rgba(0,0,0,0.15)"/>
