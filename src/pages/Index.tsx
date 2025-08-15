@@ -8,59 +8,56 @@ const Index = () => {
         {/* Full-width header card */}
         <div className="ef-header-card-full">
           <img src="/lovable-uploads/0518c066-6a07-4c02-a451-7aa1394cfa2a.png" alt="EARLY logo" className="ef-logo-image" />
-          
-          <div className="ef-nutrition-chart">
+          <h1 className="ef-header-title">Diet Plan</h1>
+        </div>
+        
+        {/* Nutritional Summary below header */}
+        <div className="ef-nutrition-summary-below">
+          <div className="ef-macros">
             {/* Single combined macro circle with kcal in center */}
-            <svg className="ef-macro-circle-premium" width="105" height="105" viewBox="0 0 120 120" aria-label="Macros: Protein 80g, Carbs 150g, Fats 50g; Total 1400 Kcal">
-              <defs>
-                <filter id="circle-shadow" x="-20%" y="-20%" width="140%" height="140%">
-                  <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="rgba(0,0,0,0.15)"/>
-                </filter>
-              </defs>
-              
+            <svg className="ef-macro-circle" width="120" height="120" viewBox="0 0 120 120" aria-label="Macros: Protein 80g, Carbs 150g, Fats 50g; Total 1400 Kcal">
               {/* Background circle */}
-              <circle cx="60" cy="60" r="45" fill="none" stroke="#dbdfd2" strokeWidth="8" filter="url(#circle-shadow)" />
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#dbdfd2" strokeWidth="8" />
               
               {/* Protein segment (80g) - ~28.6% of 280g total */}
-              <circle cx="60" cy="60" r="45" fill="none" stroke="#9AD94A" strokeWidth="8" strokeDasharray="80.7 201.8" strokeDashoffset="0" transform="rotate(-90 60 60)" filter="url(#circle-shadow)" />
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#9cd312" strokeWidth="8" strokeDasharray="80.7 201.8" strokeDashoffset="0" transform="rotate(-90 60 60)" />
               
               {/* Carbs segment (150g) - ~53.6% of 280g total */}
-              <circle cx="60" cy="60" r="45" fill="none" stroke="#8A6FB5" strokeWidth="8" strokeDasharray="151.2 131.3" strokeDashoffset="-80.7" transform="rotate(-90 60 60)" filter="url(#circle-shadow)" />
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#927b9e" strokeWidth="8" strokeDasharray="151.2 131.3" strokeDashoffset="-80.7" transform="rotate(-90 60 60)" />
               
               {/* Fats segment (50g) - ~17.9% of 280g total */}
-              <circle cx="60" cy="60" r="45" fill="none" stroke="#E8D2B1" strokeWidth="8" strokeDasharray="50.4 232.1" strokeDashoffset="-231.9" transform="rotate(-90 60 60)" filter="url(#circle-shadow)" />
+              <circle cx="60" cy="60" r="45" fill="none" stroke="#efd7b5" strokeWidth="8" strokeDasharray="50.4 232.1" strokeDashoffset="-231.9" transform="rotate(-90 60 60)" />
               
               {/* Kcal text in center */}
-              <text x="60" y="55" textAnchor="middle" fill="white" fontSize="20" fontWeight="bold">1400</text>
-              <text x="60" y="72" textAnchor="middle" fill="white" fontSize="12">Kcal</text>
+              <text x="60" y="55" textAnchor="middle" fill="#3a1f12" fontSize="20" fontWeight="bold">1400</text>
+              <text x="60" y="72" textAnchor="middle" fill="#3a1f12" fontSize="12">Kcal</text>
             </svg>
+            
+            {/* Macro labels horizontal */}
+            <div className="ef-macro-labels-horizontal">
+              <div className="ef-macro-label-item">
+                <span className="ef-macro-dot protein">●</span>
+                <div>
+                  <div className="ef-macro-text">Protein</div>
+                  <div className="ef-macro-value">80g</div>
+                </div>
+              </div>
+              <div className="ef-macro-label-item">
+                <span className="ef-macro-dot carbs">●</span>
+                <div>
+                  <div className="ef-macro-text">Carbs</div>
+                  <div className="ef-macro-value">150g</div>
+                </div>
+              </div>
+              <div className="ef-macro-label-item">
+                <span className="ef-macro-dot fats">●</span>
+                <div>
+                  <div className="ef-macro-text">Fats</div>
+                  <div className="ef-macro-value">50g</div>
+                </div>
+              </div>
+            </div>
           </div>
-          
-          <div className="ef-macro-labels-premium">
-            <div className="ef-macro-label-item">
-              <span className="ef-macro-dot protein-premium">●</span>
-              <div>
-                <div className="ef-macro-text-premium">Protein</div>
-                <div className="ef-macro-value-premium">80g</div>
-              </div>
-            </div>
-            <div className="ef-macro-label-item">
-              <span className="ef-macro-dot carbs-premium">●</span>
-              <div>
-                <div className="ef-macro-text-premium">Carbs</div>
-                <div className="ef-macro-value-premium">150g</div>
-              </div>
-            </div>
-            <div className="ef-macro-label-item">
-              <span className="ef-macro-dot fats-premium">●</span>
-              <div>
-                <div className="ef-macro-text-premium">Fats</div>
-                <div className="ef-macro-value-premium">50g</div>
-              </div>
-            </div>
-          </div>
-          
-          <h1 className="ef-header-title">Diet Plan</h1>
         </div>
 
         {/* First 4 meal cards - 2x2 grid */}
