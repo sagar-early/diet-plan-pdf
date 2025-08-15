@@ -8,7 +8,7 @@ const Index = () => {
         {/* Full-width header card */}
         <div className="ef-header-card-full">
           <div className="ef-logo">
-            <img src="/lovable-uploads/a62cee1e-54ca-4b97-8a6e-4e68019b8f91.png" alt="EARLY logo" className="ef-logo-image" />
+            <img src="/White.png" alt="EARLY logo" className="ef-logo-image" />
           </div>
           <h1 className="ef-header-title">Diet Plan</h1>
         </div>
