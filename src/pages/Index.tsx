@@ -1,3 +1,5 @@
+import NutritionistCard from '@/components/NutritionistCard';
+
 const Index = () => {
   return (
     <>
@@ -8,16 +10,8 @@ const Index = () => {
 
       <main className="ef-page">
         <div className="ef-page-content">
-          {/* Nutritionist Card */}
-          <div className="ef-nutritionist-card">
-            <div className="ef-nutritionist-image">
-              <img src="/lovable-uploads/a1db4fe7-e72a-4619-8117-158b14725315.png" alt="Nutritionist Sparrow" />
-            </div>
-            <div className="ef-nutritionist-content">
-              <h2 className="ef-nutritionist-title">Your Nutritionist</h2>
-              <p className="ef-nutritionist-subtitle">Guiding you through every step of your plan.</p>
-            </div>
-          </div>
+          {/* Professional Nutritionist Card */}
+          <NutritionistCard />
 
           {/* Meal cards grid */}
           <div className="ef-meal-cards-grid">
