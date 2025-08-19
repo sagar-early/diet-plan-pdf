@@ -121,17 +121,17 @@ const Index = () => {
           </div>
           </div>
 
-          {/* Cheat Meal Card */}
-          <div className="ef-cheat-meal-card">
-            <div className="ef-cheat-sparrow">
-              <img src="/lovable-uploads/a1db4fe7-e72a-4619-8117-158b14725315.png" alt="Happy sparrow with burger" />
+        </div>
+
+        {/* Cheat Meal Card - Full Width */}
+        <div className="ef-cheat-meal-full-width">
+          <div className="ef-cheat-content-wrapper">
+            <div className="ef-cheat-icon">
+              <img src="/lovable-uploads/a1db4fe7-e72a-4619-8117-158b14725315.png" alt="Happy sparrow celebrating treat" />
             </div>
-            <div className="ef-cheat-content">
-              <h3 className="ef-cheat-title">Cheat Meal</h3>
-              <div className="ef-cheat-time">Sunday – Lunch</div>
-              <p className="ef-cheat-description">
-                Enjoy your Sunday brunch at your favourite place, make sure to keep it within 300 kcal.
-              </p>
+            <div className="ef-cheat-text">
+              <h3 className="ef-cheat-title-new">Cheat Meal (Planned Indulgence)</h3>
+              <p className="ef-cheat-subtitle">Because balance matters — enjoy your favorite treat in moderation.</p>
             </div>
           </div>
         </div>

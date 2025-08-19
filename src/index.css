@@ -176,44 +176,42 @@ All colors MUST be HSL.
     gap: 20px;
   }
 
-  /* Professional Nutritionist Card */
-  .ef-professional-nutritionist-card {
+  /* Compact Nutrition Summary Card */
+  .ef-nutrition-summary-compact {
     background: #ffffff;
     border-radius: 16px;
-    padding: 20px;
+    padding: 16px 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     margin: 0;
   }
 
-  /* Macro Row Container - Text Only */
-  .ef-macro-row-container {
+  .ef-nutrition-layout {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 24px;
-    margin: 0;
-    flex-wrap: wrap;
-    padding-top: 4px;
   }
 
-  .ef-macro-item {
+  .ef-calories-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
-    min-width: 0;
+    gap: 4px;
   }
 
-  .ef-macro-item:first-child .ef-macro-label {
-    /* No dot for calories */
-    padding-left: 0;
+  .ef-macros-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 
-  .ef-macro-item:not(:first-child) {
+  .ef-macro-item-compact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
     position: relative;
-  }
-
-  .ef-macro-item:not(:first-child) .ef-macro-label {
-    padding-left: 16px;
+    padding-left: 12px;
   }
 
   .ef-macro-dot {
@@ -238,49 +236,43 @@ All colors MUST be HSL.
     background: #D7CCC8;
   }
 
-  .ef-macro-label {
-    font-size: 13px;
-    font-weight: 500;
-    color: #666666;
-    margin: 0;
-    line-height: 1.35;
-  }
-
-  .ef-macro-value {
-    font-size: 16px;
+  .ef-nutrition-label {
+    font-size: 14px;
     font-weight: 600;
     color: #222222;
     margin: 0;
-    line-height: 1.35;
+    line-height: 1.2;
   }
 
-  .ef-card-footer {
-    text-align: center;
-    padding-top: 8px;
-    margin-top: 12px;
-  }
-
-  .ef-footer-text {
-    font-size: 12px;
-    color: #999999;
+  .ef-nutrition-value {
+    font-size: 13px;
+    font-weight: 400;
+    color: #444444;
     margin: 0;
+    line-height: 1.2;
   }
 
   @media (max-width: 768px) {
-    .ef-macro-row-container {
+    .ef-nutrition-layout {
+      flex-direction: column;
+      align-items: flex-start;
       gap: 16px;
     }
-  }
-
-  @media (max-width: 360px) {
-    .ef-macro-row-container {
-      gap: 12px;
-      row-gap: 12px;
+    
+    .ef-macros-section {
+      align-self: center;
+      gap: 16px;
     }
     
-    .ef-macro-item {
-      flex: 1;
-      min-width: calc(50% - 6px);
+    .ef-cheat-content-wrapper {
+      flex-direction: column;
+      text-align: center;
+      gap: 16px;
+    }
+    
+    .ef-cheat-icon {
+      width: 64px;
+      height: 64px;
     }
   }
 
@@ -445,59 +437,63 @@ All colors MUST be HSL.
     /* No flex or min-height to allow natural sizing */
   }
 
-  /* Cheat Meal Card */
-  .ef-cheat-meal-card {
-    background: linear-gradient(135deg, #927A9E, #EED6B5, #B5EC2C);
-    border-radius: 24px;
-    padding: 24px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
-    margin-top: 30px;
+  /* Cheat Meal Card - Full Width */
+  .ef-cheat-meal-full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: linear-gradient(135deg, hsl(var(--ef-purple)), hsl(var(--ef-sand)), hsl(var(--ef-lime)));
+    padding: 24px 0;
+    margin-top: 32px;
   }
 
-  .ef-cheat-sparrow {
+  .ef-cheat-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .ef-cheat-icon {
     flex-shrink: 0;
-    width: 140px;
-    height: 140px;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .ef-cheat-sparrow img {
+  .ef-cheat-icon img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
 
-  @media (max-width: 768px) {
-    .ef-cheat-meal-card {
-      flex-direction: column;
-      text-align: center;
-      gap: 16px;
-    }
-    
-    .ef-cheat-sparrow {
-      width: 120px;
-      height: 120px;
-    }
-  }
-
-  .ef-cheat-content {
+  .ef-cheat-text {
     flex: 1;
   }
 
-  .ef-cheat-title {
-    font-size: 20px;
+  .ef-cheat-title-new {
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    font-size: 22px;
     font-weight: 700;
-    color: #333;
+    color: #333333;
     margin: 0 0 4px 0;
+    line-height: 1.2;
   }
 
-  .ef-cheat-time {
+  .ef-cheat-subtitle {
     font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    margin: 0;
+    line-height: 1.3;
+  }
     font-style: italic;
     color: #666;
     margin: 0 0 8px 0;
