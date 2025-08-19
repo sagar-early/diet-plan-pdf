@@ -11,24 +11,6 @@ const NutritionistCard: React.FC<NutritionistCardProps> = ({ className = '' }) =
       role="region"
       aria-label="Nutritionist plan"
     >
-      {/* Header with profile and info */}
-      <div className="ef-nutritionist-header">
-        <div className="ef-nutritionist-profile">
-          <img 
-            src="/lovable-uploads/a1db4fe7-e72a-4619-8117-158b14725315.png" 
-            alt="Nutritionist Profile"
-            className="ef-profile-image"
-          />
-        </div>
-        <div className="ef-nutritionist-info">
-          <h3 className="ef-nutritionist-name">Dr. Sarah Mitchell</h3>
-          <p className="ef-nutritionist-designation">Nutritionist</p>
-        </div>
-      </div>
-      
-      {/* Divider */}
-      <div className="ef-card-divider"></div>
-      
       {/* Macro Row - Text Only */}
       <div 
         className="ef-macro-row-container"

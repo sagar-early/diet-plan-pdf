@@ -185,58 +185,14 @@ All colors MUST be HSL.
     margin: 0;
   }
 
-  .ef-nutritionist-header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 12px;
-  }
-
-  .ef-nutritionist-profile {
-    flex-shrink: 0;
-  }
-
-  .ef-profile-image {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid hsl(var(--ef-green-200));
-  }
-
-  .ef-nutritionist-info {
-    flex: 1;
-  }
-
-  .ef-nutritionist-name {
-    font-size: 18px;
-    font-weight: 700;
-    color: #222222;
-    margin: 0 0 4px 0;
-    line-height: 1.35;
-  }
-
-  .ef-nutritionist-designation {
-    font-size: 14px;
-    color: #666666;
-    margin: 0;
-    line-height: 1.35;
-  }
-
-  .ef-card-divider {
-    width: 100%;
-    height: 1px;
-    background: #EAEAEA;
-    margin: 12px 0;
-  }
-
   /* Macro Row Container - Text Only */
   .ef-macro-row-container {
     display: flex;
     align-items: center;
     gap: 24px;
-    margin: 16px 0;
+    margin: 0;
     flex-wrap: wrap;
+    padding-top: 4px;
   }
 
   .ef-macro-item {
@@ -311,12 +267,6 @@ All colors MUST be HSL.
   }
 
   @media (max-width: 768px) {
-    .ef-nutritionist-header {
-      flex-direction: column;
-      text-align: center;
-      gap: 12px;
-    }
-    
     .ef-macro-row-container {
       gap: 16px;
     }
