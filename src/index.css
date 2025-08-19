@@ -182,14 +182,14 @@ All colors MUST be HSL.
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    margin: 16px 0 0 0;
+    margin: 0;
   }
 
   .ef-nutritionist-header {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   .ef-nutritionist-profile {
@@ -197,8 +197,8 @@ All colors MUST be HSL.
   }
 
   .ef-profile-image {
-    width: 70px;
-    height: 70px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid hsl(var(--ef-green-200));
@@ -213,124 +213,95 @@ All colors MUST be HSL.
     font-weight: 700;
     color: #222222;
     margin: 0 0 4px 0;
+    line-height: 1.35;
   }
 
   .ef-nutritionist-designation {
     font-size: 14px;
     color: #666666;
     margin: 0;
+    line-height: 1.35;
   }
 
   .ef-card-divider {
     width: 100%;
     height: 1px;
-    background: #E5E5E5;
-    margin: 16px 0;
+    background: #EAEAEA;
+    margin: 12px 0;
   }
 
-  .ef-nutritionist-body {
+  /* Macro Row Container - Text Only */
+  .ef-macro-row-container {
     display: flex;
     align-items: center;
     gap: 24px;
-    margin-bottom: 16px;
+    margin: 16px 0;
+    flex-wrap: wrap;
   }
 
-  .ef-calories-section {
-    flex-shrink: 0;
-  }
-
-  .ef-donut-chart {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: conic-gradient(
-      hsl(var(--ef-green-500)) 0deg 120deg,
-      hsl(var(--ef-purple)) 120deg 240deg,
-      hsl(var(--ef-sand)) 240deg 360deg
-    );
+  .ef-macro-item {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .ef-macro-item:first-child .ef-macro-label {
+    /* No dot for calories */
+    padding-left: 0;
+  }
+
+  .ef-macro-item:not(:first-child) {
     position: relative;
   }
 
-  .ef-donut-chart::before {
-    content: '';
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    background: #ffffff;
-    border-radius: 50%;
-  }
-
-  .ef-chart-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-  }
-
-  .ef-total-calories {
-    font-size: 24px;
-    font-weight: 700;
-    color: hsl(var(--ef-green-900));
-    line-height: 1;
-  }
-
-  .ef-kcal-label {
-    font-size: 12px;
-    color: #666666;
-    margin-top: 2px;
-  }
-
-  .ef-macros-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .ef-macro-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  .ef-macro-item:not(:first-child) .ef-macro-label {
+    padding-left: 16px;
   }
 
   .ef-macro-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
     flex-shrink: 0;
   }
 
   .ef-protein-dot {
-    background: hsl(var(--ef-green-500));
+    background: #8BC34A;
   }
 
   .ef-carbs-dot {
-    background: hsl(var(--ef-purple));
+    background: #7E57C2;
   }
 
   .ef-fats-dot {
-    background: hsl(var(--ef-sand));
+    background: #D7CCC8;
   }
 
   .ef-macro-label {
-    font-size: 14px;
-    color: #333333;
-    flex: 1;
+    font-size: 13px;
+    font-weight: 500;
+    color: #666666;
+    margin: 0;
+    line-height: 1.35;
   }
 
   .ef-macro-value {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
-    color: hsl(var(--ef-green-900));
+    color: #222222;
+    margin: 0;
+    line-height: 1.35;
   }
 
   .ef-card-footer {
     text-align: center;
     padding-top: 8px;
+    margin-top: 12px;
   }
 
   .ef-footer-text {
@@ -340,18 +311,26 @@ All colors MUST be HSL.
   }
 
   @media (max-width: 768px) {
-    .ef-nutritionist-body {
+    .ef-nutritionist-header {
       flex-direction: column;
-      gap: 16px;
       text-align: center;
+      gap: 12px;
     }
     
-    .ef-macros-section {
-      width: 100%;
+    .ef-macro-row-container {
+      gap: 16px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .ef-macro-row-container {
+      gap: 12px;
+      row-gap: 12px;
     }
     
-    .ef-macro-row {
-      justify-content: space-between;
+    .ef-macro-item {
+      flex: 1;
+      min-width: calc(50% - 6px);
     }
   }
 

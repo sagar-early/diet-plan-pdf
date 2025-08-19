@@ -6,7 +6,11 @@ interface NutritionistCardProps {
 
 const NutritionistCard: React.FC<NutritionistCardProps> = ({ className = '' }) => {
   return (
-    <div className={`ef-professional-nutritionist-card ${className}`}>
+    <div 
+      className={`ef-professional-nutritionist-card ${className}`}
+      role="region"
+      aria-label="Nutritionist plan"
+    >
       {/* Header with profile and info */}
       <div className="ef-nutritionist-header">
         <div className="ef-nutritionist-profile">
@@ -25,39 +29,39 @@ const NutritionistCard: React.FC<NutritionistCardProps> = ({ className = '' }) =
       {/* Divider */}
       <div className="ef-card-divider"></div>
       
-      {/* Content with chart and macros */}
-      <div className="ef-nutritionist-body">
-        <div className="ef-calories-section">
-          <div className="ef-donut-chart">
-            <div className="ef-chart-center">
-              <span className="ef-total-calories">1400</span>
-              <span className="ef-kcal-label">Kcal</span>
-            </div>
-          </div>
+      {/* Macro Row - Text Only */}
+      <div 
+        className="ef-macro-row-container"
+        role="group"
+        aria-label="Daily intake: 1400 kilocalories; Protein 80 grams; Carbohydrates 150 grams; Fats 50 grams"
+      >
+        <div className="ef-macro-item">
+          <span className="ef-macro-label">Calories</span>
+          <span className="ef-macro-value">1400 Kcal</span>
         </div>
         
-        <div className="ef-macros-section">
-          <div className="ef-macro-row">
-            <div className="ef-macro-dot ef-protein-dot"></div>
-            <span className="ef-macro-label">Protein</span>
-            <span className="ef-macro-value">80g</span>
-          </div>
-          <div className="ef-macro-row">
-            <div className="ef-macro-dot ef-carbs-dot"></div>
-            <span className="ef-macro-label">Carbs</span>
-            <span className="ef-macro-value">150g</span>
-          </div>
-          <div className="ef-macro-row">
-            <div className="ef-macro-dot ef-fats-dot"></div>
-            <span className="ef-macro-label">Fats</span>
-            <span className="ef-macro-value">50g</span>
-          </div>
+        <div className="ef-macro-item">
+          <div className="ef-macro-dot ef-protein-dot"></div>
+          <span className="ef-macro-label">Protein</span>
+          <span className="ef-macro-value">80g</span>
+        </div>
+        
+        <div className="ef-macro-item">
+          <div className="ef-macro-dot ef-carbs-dot"></div>
+          <span className="ef-macro-label">Carbs</span>
+          <span className="ef-macro-value">150g</span>
+        </div>
+        
+        <div className="ef-macro-item">
+          <div className="ef-macro-dot ef-fats-dot"></div>
+          <span className="ef-macro-label">Fats</span>
+          <span className="ef-macro-value">50g</span>
         </div>
       </div>
       
       {/* Footer */}
       <div className="ef-card-footer">
-        <p className="ef-footer-text">Plan created by Early Nutrition Team</p>
+        <p className="ef-footer-text">Personalized by Early Nutrition Team</p>
       </div>
     </div>
   );
