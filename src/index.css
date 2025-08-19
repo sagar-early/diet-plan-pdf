@@ -126,22 +126,24 @@ All colors MUST be HSL.
 @layer components {
   .ef-page {
     min-height: 100vh;
-    margin: 0;
+    margin: 0 auto;
     background: #faf8f1;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     text-align: left;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .ef-page-content {
     width: 100%;
-    padding: 0;
+    max-width: 1200px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    flex: 1;
   }
 
   .ef-page-2 {
@@ -235,19 +237,13 @@ All colors MUST be HSL.
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px;
-    padding: 16px;
-    flex: 1;
+    margin-bottom: 16px;
   }
 
   @media (max-width: 768px) {
     .ef-meal-cards-grid {
       grid-template-columns: 1fr;
       gap: 12px;
-      padding: 8px;
-    }
-    
-    .ef-cheat-meal-card {
-      margin: 8px;
     }
   }
 
@@ -274,18 +270,11 @@ All colors MUST be HSL.
   .ef-meal-time {
     font-size: 14px;
     color: hsl(var(--ef-green-600));
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-  }
-
-  .ef-meal-separator {
-    border: none;
-    height: 1px;
-    background: hsl(var(--ef-green-200));
-    margin: 8px 0 16px 0;
   }
 
   .ef-meal-sections {
@@ -316,7 +305,7 @@ All colors MUST be HSL.
 
   /* Cheat Meal Card */
   .ef-cheat-meal-card {
-    background: #ffffff;
+    background: linear-gradient(135deg, #927b9e, #d2f47e);
     border-radius: 12px;
     padding: 24px;
     display: flex;
@@ -325,7 +314,6 @@ All colors MUST be HSL.
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
-    margin: 16px;
   }
 
   .ef-cheat-icon {
