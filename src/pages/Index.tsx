@@ -121,11 +121,15 @@ const Index = () => {
           </div>
           </div>
 
-          {/* Cheat Meal Card - Full Width */}
-          <div className="ef-cheat-meal-card-fullwidth">
-            <div className="ef-cheat-content-aligned">
-              <h3 className="ef-cheat-title-refined">Cheat Meal</h3>
-              <p className="ef-cheat-description-refined">
+          {/* Cheat Meal Card */}
+          <div className="ef-cheat-meal-card">
+            <div className="ef-cheat-sparrow">
+              <img src="/lovable-uploads/a1db4fe7-e72a-4619-8117-158b14725315.png" alt="Happy sparrow with burger" />
+            </div>
+            <div className="ef-cheat-content">
+              <h3 className="ef-cheat-title">Cheat Meal</h3>
+              <div className="ef-cheat-time">Sunday – Lunch</div>
+              <p className="ef-cheat-description">
                 Enjoy your Sunday brunch at your favourite place, make sure to keep it within 300 kcal.
               </p>
             </div>
@@ -139,9 +143,7 @@ const Index = () => {
           <div className="ef-footer-logo">
             <img src="/lovable-uploads/752b0baa-0b13-45c8-bd2e-8a1088f10693.png" alt="Early Logo" />
           </div>
-          <div className="ef-footer-text">
-            <a href="https://www.early.fit/" className="ef-footer-link">Visit our website</a>
-          </div>
+          <div className="ef-footer-text">Visit our website www.early.fit</div>
         </div>
       </footer>
     </>
