@@ -1,10 +1,6 @@
 const Index = () => {
   return <main className="ef-page">
-      <div className="ef-page-content">
-        {/* Header card without logo */}
-        <div className="ef-header-card-full">
-          <h1 className="ef-header-title">Diet Plan</h1>
-        </div>
+      <div className="ef-page-content">{/* Diet Plan content starts directly */}
 
         {/* First 4 meal cards - 2x2 grid */}
         <div className="ef-meal-cards-grid">
@@ -15,6 +11,7 @@ const Index = () => {
               <span>06:30 – 07:00</span>
               <span>80 Kcal</span>
             </div>
+            <hr className="ef-meal-separator" />
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -36,6 +33,7 @@ const Index = () => {
               <span>07:30 – 08:30</span>
               <span>450 Kcal</span>
             </div>
+            <hr className="ef-meal-separator" />
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -60,6 +58,7 @@ const Index = () => {
               <span>12:30 – 13:30</span>
               <span>400 Kcal</span>
             </div>
+            <hr className="ef-meal-separator" />
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -85,6 +84,7 @@ const Index = () => {
               <span>16:30 – 17:30</span>
               <span>150 Kcal</span>
             </div>
+            <hr className="ef-meal-separator" />
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -107,6 +107,7 @@ const Index = () => {
               <span>19:30 – 21:00</span>
               <span>400 Kcal</span>
             </div>
+            <hr className="ef-meal-separator" />
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
