@@ -124,8 +124,38 @@ All colors MUST be HSL.
 
 /* Early Diet Plan Styles */
 @layer components {
+  /* Full-width header */
+  .ef-header-full {
+    width: 100%;
+    height: 100px;
+    background: hsl(var(--ef-green-900));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ef-header-full .ef-header-title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .ef-header-full {
+      height: 80px;
+    }
+    
+    .ef-header-full .ef-header-title {
+      font-size: 24px;
+    }
+  }
+
   .ef-page {
-    min-height: 100vh;
+    min-height: calc(100vh - 180px);
     margin: 0 auto;
     background: #faf8f1;
     padding: 0;
@@ -133,17 +163,77 @@ All colors MUST be HSL.
     text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .ef-page-content {
     width: 100%;
     max-width: 1200px;
-    padding: 16px;
+    padding: 20px 16px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
+  }
+
+  /* Nutritionist Card */
+  .ef-nutritionist-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .ef-nutritionist-image {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ef-nutritionist-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .ef-nutritionist-content {
+    flex: 1;
+  }
+
+  .ef-nutritionist-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(var(--ef-green-900));
+    margin: 0 0 8px 0;
+  }
+
+  .ef-nutritionist-subtitle {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 768px) {
+    .ef-nutritionist-card {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .ef-nutritionist-image {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   .ef-page-2 {
@@ -268,13 +358,17 @@ All colors MUST be HSL.
   }
 
   .ef-meal-time {
-    font-size: 14px;
-    color: hsl(var(--ef-green-600));
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
+    font-size: 16px;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+
+  .ef-meal-separator {
+    width: 100%;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 8px 0 16px 0;
   }
 
   .ef-meal-sections {
@@ -305,55 +399,42 @@ All colors MUST be HSL.
 
   /* Cheat Meal Card */
   .ef-cheat-meal-card {
-    background: linear-gradient(135deg, #927b9e, #d2f47e);
-    border-radius: 12px;
+    background: linear-gradient(135deg, #927A9E, #EED6B5, #B5EC2C);
+    border-radius: 24px;
     padding: 24px;
     display: flex;
     align-items: center;
-    gap: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
+    gap: 24px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
   }
 
-  .ef-cheat-icon {
+  .ef-cheat-sparrow {
     flex-shrink: 0;
-    width: 64px;
-    height: 64px;
-    background: white;
-    border-radius: 16px;
+    width: 140px;
+    height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    position: relative;
   }
 
-  .ef-cheat-icon img {
+  .ef-cheat-sparrow img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
-  .ef-cheat-confetti {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-  }
-
-  .ef-cheat-confetti::before {
-    content: "✨🎉✨";
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    font-size: 12px;
-    animation: float 2s ease-in-out infinite;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-5px); }
+  @media (max-width: 768px) {
+    .ef-cheat-meal-card {
+      flex-direction: column;
+      text-align: center;
+      gap: 16px;
+    }
+    
+    .ef-cheat-sparrow {
+      width: 120px;
+      height: 120px;
+    }
   }
 
   .ef-cheat-content {
@@ -361,25 +442,72 @@ All colors MUST be HSL.
   }
 
   .ef-cheat-title {
-    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
-    color: hsl(var(--ef-espresso));
+    color: #333;
     margin: 0 0 4px 0;
   }
 
   .ef-cheat-time {
-    font-size: 14px;
-    font-weight: 600;
-    color: hsl(var(--ef-espresso));
+    font-size: 16px;
+    font-style: italic;
+    color: #666;
     margin: 0 0 8px 0;
   }
 
   .ef-cheat-description {
-    font-size: 14px;
-    color: hsl(var(--ef-espresso));
+    font-size: 16px;
+    color: #222;
     margin: 0;
     line-height: 1.4;
+  }
+
+  /* Full-width footer */
+  .ef-footer-full {
+    width: 100%;
+    height: 80px;
+    background: hsl(var(--ef-green-900));
+    margin-top: 40px;
+  }
+
+  .ef-footer-content {
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .ef-footer-logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .ef-footer-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  @media (max-width: 768px) {
+    .ef-footer-content {
+      flex-direction: column;
+      justify-content: center;
+      gap: 12px;
+      padding: 0 16px;
+    }
+    
+    .ef-footer-logo img {
+      height: 40px;
+    }
+    
+    .ef-footer-text {
+      font-size: 16px;
+      text-align: center;
+    }
   }
 
   .ef-close {

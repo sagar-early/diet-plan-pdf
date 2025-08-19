@@ -1,20 +1,31 @@
 const Index = () => {
-  return <main className="ef-page">
-      <div className="ef-page-content">
-        {/* Header card without logo */}
-        <div className="ef-header-card-full">
-          <h1 className="ef-header-title">Diet Plan</h1>
-        </div>
+  return (
+    <>
+      {/* Full-width header */}
+      <header className="ef-header-full">
+        <h1 className="ef-header-title">Diet Plan</h1>
+      </header>
 
-        {/* First 4 meal cards - 2x2 grid */}
-        <div className="ef-meal-cards-grid">
+      <main className="ef-page">
+        <div className="ef-page-content">
+          {/* Nutritionist Card */}
+          <div className="ef-nutritionist-card">
+            <div className="ef-nutritionist-image">
+              <img src="/lovable-uploads/a1db4fe7-e72a-4619-8117-158b14725315.png" alt="Nutritionist Sparrow" />
+            </div>
+            <div className="ef-nutritionist-content">
+              <h2 className="ef-nutritionist-title">Your Nutritionist</h2>
+              <p className="ef-nutritionist-subtitle">Guiding you through every step of your plan.</p>
+            </div>
+          </div>
+
+          {/* Meal cards grid */}
+          <div className="ef-meal-cards-grid">
           {/* Card 1: Pre-Breakfast */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Pre-Breakfast</h3>
-            <div className="ef-meal-time">
-              <span>06:30 – 07:00</span>
-              <span>80 Kcal</span>
-            </div>
+            <div className="ef-meal-time">06:30 – 07:00</div>
+            <div className="ef-meal-separator"></div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -32,10 +43,8 @@ const Index = () => {
           {/* Card 2: Breakfast */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Breakfast</h3>
-            <div className="ef-meal-time">
-              <span>07:30 – 08:30</span>
-              <span>450 Kcal</span>
-            </div>
+            <div className="ef-meal-time">07:30 – 08:30</div>
+            <div className="ef-meal-separator"></div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -56,10 +65,8 @@ const Index = () => {
           {/* Card 3: Lunch */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Lunch</h3>
-            <div className="ef-meal-time">
-              <span>12:30 – 13:30</span>
-              <span>400 Kcal</span>
-            </div>
+            <div className="ef-meal-time">12:30 – 13:30</div>
+            <div className="ef-meal-separator"></div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -81,10 +88,8 @@ const Index = () => {
           {/* Card 4: Evening Snack */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Evening Snack</h3>
-            <div className="ef-meal-time">
-              <span>16:30 – 17:30</span>
-              <span>150 Kcal</span>
-            </div>
+            <div className="ef-meal-time">16:30 – 17:30</div>
+            <div className="ef-meal-separator"></div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -103,10 +108,8 @@ const Index = () => {
           {/* Card 5: Dinner */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Dinner</h3>
-            <div className="ef-meal-time">
-              <span>19:30 – 21:00</span>
-              <span>400 Kcal</span>
-            </div>
+            <div className="ef-meal-time">19:30 – 21:00</div>
+            <div className="ef-meal-separator"></div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -121,25 +124,35 @@ const Index = () => {
                 </div>
               </div>
             </div>
-
-        </div>
-        </div>
-        </div>
-
-        {/* Cheat Meal Card */}
-        <div className="ef-cheat-meal-card">
-          <div className="ef-cheat-icon">
-            <img src="/lovable-uploads/de648a4d-ebcc-4e25-be16-3df9133d1207.png" alt="Happy sparrow mascot" />
-            <div className="ef-cheat-confetti"></div>
           </div>
-          <div className="ef-cheat-content">
-            <h3 className="ef-cheat-title">Cheat Meal</h3>
-            <div className="ef-cheat-time">Sunday – Lunch</div>
-            <p className="ef-cheat-description">
-              Enjoy your Sunday brunch at your favourite place, make sure to keep it within 300kcal
-            </p>
+          </div>
+
+          {/* Cheat Meal Card */}
+          <div className="ef-cheat-meal-card">
+            <div className="ef-cheat-sparrow">
+              <img src="/lovable-uploads/a1db4fe7-e72a-4619-8117-158b14725315.png" alt="Happy sparrow with burger" />
+            </div>
+            <div className="ef-cheat-content">
+              <h3 className="ef-cheat-title">Cheat Meal</h3>
+              <div className="ef-cheat-time">Sunday – Lunch</div>
+              <p className="ef-cheat-description">
+                Enjoy your Sunday brunch at your favourite place, make sure to keep it within 300 kcal.
+              </p>
+            </div>
           </div>
         </div>
-    </main>;
+      </main>
+
+      {/* Full-width footer */}
+      <footer className="ef-footer-full">
+        <div className="ef-footer-content">
+          <div className="ef-footer-logo">
+            <img src="/lovable-uploads/752b0baa-0b13-45c8-bd2e-8a1088f10693.png" alt="Early Logo" />
+          </div>
+          <div className="ef-footer-text">Visit our website www.early.fit</div>
+        </div>
+      </footer>
+    </>
+  );
 };
 export default Index;
