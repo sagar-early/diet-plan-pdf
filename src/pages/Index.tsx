@@ -1,24 +1,9 @@
 const Index = () => {
-  return (
-    <main className="ef-page">
-      {/* Full-bleed Header */}
-      <div className="ef-header-bar">
-        <h1 className="ef-header-title">Diet Plan</h1>
-      </div>
-
+  return <main className="ef-page">
       <div className="ef-page-content">
-        {/* Nutritionist Card */}
-        <div className="ef-nutritionist-card">
-          <img 
-            src="/lovable-uploads/d79909ae-0720-4208-9696-1bcaabe4a84b.png" 
-            alt="Dr. Savita Jain" 
-            className="ef-nutritionist-image"
-          />
-          <div className="ef-nutritionist-info">
-            <h3>Dr. Savita Jain</h3>
-            <p>DNB Endocrinology (Apollo Hospitals), MD and MBBS (DMCH)</p>
-            <p>Senior Consultant Endocrinologist</p>
-          </div>
+        {/* Header card without logo */}
+        <div className="ef-header-card-full">
+          <h1 className="ef-header-title">Diet Plan</h1>
         </div>
 
         {/* First 4 meal cards - 2x2 grid */}
@@ -30,7 +15,6 @@ const Index = () => {
               <span>06:30 – 07:00</span>
               <span>80 Kcal</span>
             </div>
-            <div className="ef-meal-divider"></div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -52,7 +36,6 @@ const Index = () => {
               <span>07:30 – 08:30</span>
               <span>450 Kcal</span>
             </div>
-            <div className="ef-meal-divider"></div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -77,7 +60,6 @@ const Index = () => {
               <span>12:30 – 13:30</span>
               <span>400 Kcal</span>
             </div>
-            <div className="ef-meal-divider"></div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -103,7 +85,6 @@ const Index = () => {
               <span>16:30 – 17:30</span>
               <span>150 Kcal</span>
             </div>
-            <div className="ef-meal-divider"></div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -126,7 +107,6 @@ const Index = () => {
               <span>19:30 – 21:00</span>
               <span>400 Kcal</span>
             </div>
-            <div className="ef-meal-divider"></div>
             
             <div className="ef-meal-sections">
               <div className="ef-meal-section">
@@ -142,33 +122,24 @@ const Index = () => {
               </div>
             </div>
 
-          </div>
+        </div>
+        </div>
         </div>
 
-        {/* Cheat Meal Card - Redesigned */}
+        {/* Cheat Meal Card */}
         <div className="ef-cheat-meal-card">
-          <div className="ef-cheat-grid">
-            <div className="ef-cheat-tile">Plan it, don't panic</div>
-            <div className="ef-cheat-tile">Hydrate before/after</div>
-            <div className="ef-cheat-tile">Protein first</div>
-            <div className="ef-cheat-tile">Resume routine next meal</div>
+          <div className="ef-cheat-icon">
+            <img src="/lovable-uploads/de648a4d-ebcc-4e25-be16-3df9133d1207.png" alt="Happy sparrow mascot" />
+            <div className="ef-cheat-confetti"></div>
           </div>
-          <div className="ef-cheat-sparrow">
-            <img src="/lovable-uploads/aede7335-c037-4bad-921d-5ce3bc1f0ac1.png" alt="Happy sparrow with burger and confetti" />
+          <div className="ef-cheat-content">
+            <h3 className="ef-cheat-title">Cheat Meal</h3>
+            <div className="ef-cheat-time">Sunday – Lunch</div>
+            <p className="ef-cheat-description">
+              Enjoy your Sunday brunch at your favourite place, make sure to keep it within 300kcal
+            </p>
           </div>
         </div>
-      </div>
-
-      {/* Full-bleed Footer */}
-      <div className="ef-footer-bar">
-        <img 
-          src="/lovable-uploads/17efc78d-f15b-47f2-b063-42136bffcb5e.png" 
-          alt="Early logo" 
-          className="ef-footer-logo"
-        />
-        <div className="ef-footer-text">visit our website www.early.fit</div>
-      </div>
-    </main>
-  );
+    </main>;
 };
 export default Index;
