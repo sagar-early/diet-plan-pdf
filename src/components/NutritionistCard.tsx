@@ -11,33 +11,33 @@ const NutritionistCard: React.FC<NutritionistCardProps> = ({ className = '' }) =
       role="region"
       aria-label="Nutritionist plan"
     >
-      {/* Macro Row - Text Only */}
+      {/* Macro Row - Center Aligned */}
       <div 
-        className="ef-macro-row-container"
+        className="ef-macro-row-container-centered"
         role="group"
         aria-label="Daily intake: 1400 kilocalories; Protein 80 grams; Carbohydrates 150 grams; Fats 50 grams"
       >
-        <div className="ef-macro-item">
-          <span className="ef-macro-label">Calories</span>
-          <span className="ef-macro-value">1400 Kcal</span>
+        <div className="ef-macro-item-centered">
+          <span className="ef-macro-heading">Calories</span>
+          <span className="ef-macro-subtext">1400 Kcal</span>
         </div>
         
-        <div className="ef-macro-item">
+        <div className="ef-macro-item-centered">
           <div className="ef-macro-dot ef-protein-dot"></div>
-          <span className="ef-macro-label">Protein</span>
-          <span className="ef-macro-value">80g</span>
+          <span className="ef-macro-heading">Protein</span>
+          <span className="ef-macro-subtext">80g</span>
         </div>
         
-        <div className="ef-macro-item">
+        <div className="ef-macro-item-centered">
           <div className="ef-macro-dot ef-carbs-dot"></div>
-          <span className="ef-macro-label">Carbs</span>
-          <span className="ef-macro-value">150g</span>
+          <span className="ef-macro-heading">Carbs</span>
+          <span className="ef-macro-subtext">150g</span>
         </div>
         
-        <div className="ef-macro-item">
+        <div className="ef-macro-item-centered">
           <div className="ef-macro-dot ef-fats-dot"></div>
-          <span className="ef-macro-label">Fats</span>
-          <span className="ef-macro-value">50g</span>
+          <span className="ef-macro-heading">Fats</span>
+          <span className="ef-macro-subtext">50g</span>
         </div>
       </div>
       
