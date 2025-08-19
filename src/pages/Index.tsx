@@ -121,29 +121,32 @@ const Index = () => {
           </div>
           </div>
 
-        </div>
-
-        {/* Cheat Meal Card - Full Width */}
-        <div className="ef-cheat-meal-full-width">
-          <div className="ef-cheat-content-wrapper">
-            <div className="ef-cheat-icon">
-              <img src="/lovable-uploads/a1db4fe7-e72a-4619-8117-158b14725315.png" alt="Happy sparrow celebrating treat" />
-            </div>
-            <div className="ef-cheat-text">
-              <h3 className="ef-cheat-title-new">Cheat Meal (Planned Indulgence)</h3>
-              <p className="ef-cheat-subtitle">Because balance matters — enjoy your favorite treat in moderation.</p>
+          {/* Cheat Meal Card - Full Width */}
+          <div className="ef-cheat-meal-fullwidth">
+            <div className="ef-cheat-content-container">
+              <div className="ef-cheat-icon-small">
+                <img src="/lovable-uploads/a1db4fe7-e72a-4619-8117-158b14725315.png" alt="Happy sparrow celebrating treat" />
+              </div>
+              <div className="ef-cheat-text-content">
+                <h3 className="ef-cheat-title-main">Cheat Meal</h3>
+                <p className="ef-cheat-description-text">Enjoy your favorite treat in moderation — because balance matters.</p>
+              </div>
             </div>
           </div>
         </div>
       </main>
 
       {/* Full-width footer */}
-      <footer className="ef-footer-full">
-        <div className="ef-footer-content">
-          <div className="ef-footer-logo">
-            <img src="/lovable-uploads/752b0baa-0b13-45c8-bd2e-8a1088f10693.png" alt="Early Logo" />
+      <footer className="ef-footer-fullwidth">
+        <div className="ef-footer-container">
+          <div className="ef-footer-logo-section">
+            <img src="/lovable-uploads/752b0baa-0b13-45c8-bd2e-8a1088f10693.png" alt="Early Logo" className="ef-footer-logo" />
           </div>
-          <div className="ef-footer-text">Visit our website www.early.fit</div>
+          <div className="ef-footer-link-section">
+            <a href="https://www.early.fit/" className="ef-footer-link" target="_blank" rel="noopener noreferrer">
+              Visit our website
+            </a>
+          </div>
         </div>
       </footer>
     </>
