@@ -176,62 +176,6 @@ All colors MUST be HSL.
     gap: 20px;
   }
 
-  /* Doctor & Nutrition Card */
-  .ef-doctor-nutrition-card {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 20px;
-  }
-
-  .ef-doctor-section {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .ef-doctor-image {
-    flex-shrink: 0;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    overflow: hidden;
-    background: #f5f5f5;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-
-  .ef-doctor-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .ef-doctor-info {
-    flex: 1;
-  }
-
-  .ef-doctor-title {
-    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #222222;
-    margin: 0 0 4px 0;
-    line-height: 1.2;
-  }
-
-  .ef-doctor-subtitle {
-    font-size: 14px;
-    font-weight: 400;
-    color: #666666;
-    margin: 0;
-    line-height: 1.3;
-  }
-
   /* Compact Nutrition Summary Card */
   .ef-nutrition-summary-compact {
     background: #ffffff;
@@ -309,24 +253,6 @@ All colors MUST be HSL.
   }
 
   @media (max-width: 768px) {
-    .ef-doctor-section {
-      padding: 16px;
-      gap: 12px;
-    }
-    
-    .ef-doctor-image {
-      width: 60px;
-      height: 60px;
-    }
-    
-    .ef-doctor-title {
-      font-size: 16px;
-    }
-    
-    .ef-doctor-subtitle {
-      font-size: 13px;
-    }
-    
     .ef-nutrition-layout {
       flex-direction: column;
       align-items: flex-start;
@@ -453,107 +379,36 @@ All colors MUST be HSL.
 
   .ef-meal-card {
     background: #ffffff;
-    border-radius: 16px;
-    padding: 16px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid hsl(var(--ef-green-200));
     display: flex;
     flex-direction: column;
     break-inside: avoid;
-    margin-bottom: 0;
-  }
-
-  .ef-meal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     margin-bottom: 12px;
-  }
-
-  .ef-meal-title-section {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
   }
 
   .ef-meal-title {
     font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
     font-size: 18px;
     font-weight: 600;
-    color: #222222;
-    margin: 0;
-    line-height: 1.2;
+    color: hsl(var(--ef-green-900));
+    margin: 0 0 8px 0;
   }
 
   .ef-meal-time {
-    font-size: 14px;
-    color: #666666;
-    margin: 0;
-    line-height: 1.3;
-  }
-
-  .ef-meal-total {
-    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
     font-size: 16px;
-    font-weight: 700;
-    color: #444444;
-    align-self: flex-start;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 8px;
   }
 
   .ef-meal-separator {
     width: 100%;
     height: 1px;
-    background: #E0E0E0;
-    margin: 0 0 16px 0;
-  }
-
-  .ef-section-divider {
-    width: 100%;
-    height: 1px;
-    background: #E0E0E0;
-    margin: 8px 0 10px 0;
-  }
-
-  .ef-food-card {
-    background: #fafafa;
-    border-radius: 8px;
-    padding: 12px;
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    border: 1px solid #f0f0f0;
-  }
-
-  .ef-food-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .ef-food-name {
-    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #222222;
-    line-height: 1.2;
-  }
-
-  .ef-food-portion {
-    font-size: 14px;
-    font-weight: 400;
-    color: #666666;
-    line-height: 1.2;
-  }
-
-  .ef-food-kcal {
-    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #444444;
-    flex-shrink: 0;
-    margin-left: 12px;
-    align-self: center;
+    background: #e0e0e0;
+    margin: 8px 0 16px 0;
   }
 
   .ef-meal-sections {
@@ -621,9 +476,17 @@ All colors MUST be HSL.
 
   .ef-cheat-title-new {
     font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
     color: #333333;
+    margin: 0 0 4px 0;
+    line-height: 1.2;
+  }
+
+  .ef-cheat-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
     margin: 0;
     line-height: 1.3;
   }
@@ -667,17 +530,6 @@ All colors MUST be HSL.
     font-size: 18px;
     font-weight: 600;
     color: #ffffff;
-  }
-
-  .ef-footer-text a {
-    color: #ffffff;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom-color 0.2s ease;
-  }
-
-  .ef-footer-text a:hover {
-    border-bottom-color: #ffffff;
   }
 
   @media (max-width: 768px) {
