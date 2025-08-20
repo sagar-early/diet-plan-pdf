@@ -437,26 +437,22 @@ All colors MUST be HSL.
     /* No flex or min-height to allow natural sizing */
   }
 
-  /* Cheat Meal Card - Full Width */
+  /* Cheat Meal Card - Left Aligned */
   .ef-cheat-meal-full-width {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    width: 100%;
     background: linear-gradient(135deg, hsl(var(--ef-purple)), hsl(var(--ef-sand)), hsl(var(--ef-lime)));
-    padding: 24px 0;
+    border-radius: 12px;
+    padding: 24px;
     margin-top: 32px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .ef-cheat-content-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 16px;
     display: flex;
     align-items: center;
     gap: 20px;
+    width: 100%;
   }
 
   .ef-cheat-icon {
