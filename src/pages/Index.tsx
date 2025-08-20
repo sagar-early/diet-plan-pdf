@@ -1,8 +1,6 @@
 import NutritionistCard from '@/components/NutritionistCard';
-
 const Index = () => {
-  return (
-    <>
+  return <>
       {/* Full-width header */}
       <header className="ef-header-full">
         <h1 className="ef-header-title">Diet Plan</h1>
@@ -18,7 +16,7 @@ const Index = () => {
           {/* Card 1: Pre-Breakfast */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Pre-Breakfast</h3>
-            <div className="ef-meal-time">06:30 – 07:00</div>
+            <div className="ef-meal-time">06:30 – 07:00                                                 80Kcal</div>
             <div className="ef-meal-separator"></div>
             
             <div className="ef-meal-sections">
@@ -37,7 +35,7 @@ const Index = () => {
           {/* Card 2: Breakfast */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Breakfast</h3>
-            <div className="ef-meal-time">07:30 – 08:30</div>
+            <div className="ef-meal-time">07:30 – 08:30                                               100Kcal</div>
             <div className="ef-meal-separator"></div>
             
             <div className="ef-meal-sections">
@@ -59,7 +57,7 @@ const Index = () => {
           {/* Card 3: Lunch */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Lunch</h3>
-            <div className="ef-meal-time">12:30 – 13:30</div>
+            <div className="ef-meal-time">12:30 – 13:30                                               350Kcal</div>
             <div className="ef-meal-separator"></div>
             
             <div className="ef-meal-sections">
@@ -82,7 +80,7 @@ const Index = () => {
           {/* Card 4: Evening Snack */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Evening Snack</h3>
-            <div className="ef-meal-time">16:30 – 17:30</div>
+            <div className="ef-meal-time">16:30 – 17:30                                               200Kcal</div>
             <div className="ef-meal-separator"></div>
             
             <div className="ef-meal-sections">
@@ -102,7 +100,7 @@ const Index = () => {
           {/* Card 5: Dinner */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Dinner</h3>
-            <div className="ef-meal-time">19:30 – 21:00</div>
+            <div className="ef-meal-time">19:30 – 21:00                                               350Kcal</div>
             <div className="ef-meal-separator"></div>
             
             <div className="ef-meal-sections">
@@ -146,7 +144,6 @@ const Index = () => {
           <div className="ef-footer-text">Visit our website www.early.fit</div>
         </div>
       </footer>
-    </>
-  );
+    </>;
 };
 export default Index;
