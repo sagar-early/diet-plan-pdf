@@ -123,8 +123,8 @@ const Index = () => {
 
         </div>
 
-        {/* Cheat Meal Card - Full Left Edge Aligned */}
-        <div className="ef-cheat-meal-left-edge">
+        {/* Cheat Meal Card - Full Width */}
+        <div className="ef-cheat-meal-full-width">
           <div className="ef-cheat-content-wrapper">
             <div className="ef-cheat-icon">
               <img src="/lovable-uploads/a1db4fe7-e72a-4619-8117-158b14725315.png" alt="Happy sparrow celebrating treat" />
