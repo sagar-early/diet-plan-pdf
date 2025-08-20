@@ -128,8 +128,9 @@ const Index = () => {
               <img src="/lovable-uploads/a1db4fe7-e72a-4619-8117-158b14725315.png" alt="Happy sparrow celebrating treat" />
             </div>
             <div className="ef-cheat-text">
-              <h3 className="ef-cheat-title-new">Cheat Meal (Planned Indulgence)</h3>
-              <p className="ef-cheat-subtitle">Because balance matters — enjoy your favorite treat in moderation.</p>
+              <h3 className="ef-cheat-title-new">Cheat Meal
+(Sunday-Lunch)</h3>
+              <p className="ef-cheat-subtitle">Enjoy your Sunday brunch at your favourite place, make sure to keep it within 300kcal</p>
             </div>
           </div>
         </div>
