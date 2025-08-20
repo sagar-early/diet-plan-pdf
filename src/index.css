@@ -176,42 +176,43 @@ All colors MUST be HSL.
     gap: 20px;
   }
 
-  /* Compact Nutrition Summary Card */
-  .ef-nutrition-summary-compact {
+  /* New Nutrition Summary Card - Centered calories with horizontal macros */
+  .ef-nutrition-summary-new {
     background: #ffffff;
     border-radius: 16px;
-    padding: 16px 20px;
+    padding: 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     margin: 0;
-  }
-
-  .ef-nutrition-layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-  }
-
-  .ef-calories-section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-  }
-
-  .ef-macros-section {
-    display: flex;
     align-items: center;
     gap: 20px;
   }
 
-  .ef-macro-item-compact {
+  .ef-calories-section-new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+  }
+
+  .ef-macros-section-new {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .ef-macro-item-new {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4px;
     position: relative;
-    padding-left: 12px;
+    flex: 1;
   }
 
   .ef-macro-dot {
@@ -236,35 +237,40 @@ All colors MUST be HSL.
     background: #D7CCC8;
   }
 
-  .ef-nutrition-label {
-    font-size: 14px;
-    font-weight: 600;
+  .ef-nutrition-label-bold {
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
     color: #222222;
     margin: 0;
     line-height: 1.2;
   }
 
-  .ef-nutrition-value {
-    font-size: 13px;
+  .ef-nutrition-value-large {
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    font-size: 18px;
     font-weight: 400;
-    color: #444444;
+    color: #333333;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .ef-nutrition-value-new {
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
     margin: 0;
     line-height: 1.2;
   }
 
   @media (max-width: 768px) {
-    .ef-nutrition-layout {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 16px;
+    .ef-macros-section-new {
+      gap: 24px;
+      max-width: 280px;
     }
     
-    .ef-macros-section {
-      align-self: center;
-      gap: 16px;
-    }
-    
-    .ef-cheat-content-wrapper {
+    .ef-cheat-content-new {
       flex-direction: column;
       text-align: center;
       gap: 16px;
@@ -362,53 +368,75 @@ All colors MUST be HSL.
     margin: 0;
   }
 
-  /* Meal Cards Grid */
+  /* Meal Cards Grid - No gaps */
   .ef-meal-cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 16px;
-    margin-bottom: 16px;
+    gap: 0;
+    margin-bottom: 0;
   }
 
   @media (max-width: 768px) {
     .ef-meal-cards-grid {
       grid-template-columns: 1fr;
-      gap: 12px;
+      gap: 0;
     }
   }
 
-  .ef-meal-card {
+  /* New meal card with header layout */
+  .ef-meal-card-new {
     background: #ffffff;
     border-radius: 12px;
-    padding: 10px;
+    padding: 16px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border: 1px solid hsl(var(--ef-green-200));
     display: flex;
     flex-direction: column;
     break-inside: avoid;
-    margin-bottom: 12px;
   }
 
-  .ef-meal-title {
-    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: hsl(var(--ef-green-900));
-    margin: 0 0 8px 0;
-  }
-
-  .ef-meal-time {
-    font-size: 16px;
-    color: #777;
-    font-style: italic;
+  .ef-meal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 8px;
   }
 
-  .ef-meal-separator {
+  .ef-meal-title-new {
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222222;
+    margin: 0;
+  }
+
+  .ef-meal-total {
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(var(--ef-green-600));
+  }
+
+  .ef-meal-time-new {
+    font-size: 14px;
+    color: #777777;
+    font-style: italic;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .ef-meal-separator-new {
     width: 100%;
     height: 1px;
-    background: #e0e0e0;
-    margin: 8px 0 16px 0;
+    background: #EAEAEA;
+    margin: 0 0 16px 0;
+  }
+
+  /* Dotted separator for food items */
+  .ef-dotted-separator {
+    width: 100%;
+    height: 1px;
+    border-top: 1px dotted #EAEAEA;
+    margin: 8px 0;
   }
 
   .ef-meal-sections {
@@ -437,23 +465,24 @@ All colors MUST be HSL.
     /* No flex or min-height to allow natural sizing */
   }
 
-  /* Cheat Meal Card - Full Width */
-  .ef-cheat-meal-full-width {
+  /* Cheat Meal Card - Full Width Edge-to-Edge */
+  .ef-cheat-meal-new {
     width: 100vw;
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    background: linear-gradient(135deg, hsl(var(--ef-purple)), hsl(var(--ef-sand)), hsl(var(--ef-lime)));
+    background: #F9F9F9;
     padding: 24px 0;
-    margin-top: 32px;
+    margin-top: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   }
 
-  .ef-cheat-content-wrapper {
+  .ef-cheat-content-new {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -478,21 +507,63 @@ All colors MUST be HSL.
     flex: 1;
   }
 
-  .ef-cheat-title-new {
+  .ef-cheat-title-refined {
     font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
-    color: #333333;
-    margin: 0 0 4px 0;
+    color: #222222;
+    margin: 0;
     line-height: 1.2;
   }
 
-  .ef-cheat-subtitle {
+  .ef-cheat-subtitle-refined {
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #555555;
     margin: 0;
     line-height: 1.3;
+  }
+
+  /* Footer - Full Width */
+  .ef-footer-new {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: #ffffff;
+    padding: 20px 0;
+    margin-top: 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .ef-footer-content-new {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ef-footer-logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .ef-footer-link {
+    font-family: 'Satoshi', 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    color: #0077FF;
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+  }
+
+  .ef-footer-link:hover {
+    text-decoration: underline;
   }
     font-style: italic;
     color: #666;

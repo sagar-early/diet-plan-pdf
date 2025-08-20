@@ -7,36 +7,34 @@ interface NutritionistCardProps {
 const NutritionistCard: React.FC<NutritionistCardProps> = ({ className = '' }) => {
   return (
     <div 
-      className={`ef-nutrition-summary-compact ${className}`}
+      className={`ef-nutrition-summary-new ${className}`}
       role="region"
       aria-label="Daily intake: 1400 kilocalories; Protein 80 grams; Carbohydrates 150 grams; Fats 50 grams"
     >
-      <div className="ef-nutrition-layout">
-        {/* Calories - Left aligned */}
-        <div className="ef-calories-section">
-          <span className="ef-nutrition-label">Calories</span>
-          <span className="ef-nutrition-value">1400 Kcal</span>
+      {/* Calories - Centered at top */}
+      <div className="ef-calories-section-new">
+        <div className="ef-nutrition-label-bold">Calories</div>
+        <div className="ef-nutrition-value-large">1400 Kcal</div>
+      </div>
+      
+      {/* Macros - Horizontal row below calories */}
+      <div className="ef-macros-section-new">
+        <div className="ef-macro-item-new">
+          <div className="ef-macro-dot ef-protein-dot"></div>
+          <div className="ef-nutrition-label-bold">Protein</div>
+          <div className="ef-nutrition-value-new">80g</div>
         </div>
         
-        {/* Macros - Right aligned */}
-        <div className="ef-macros-section">
-          <div className="ef-macro-item-compact">
-            <div className="ef-macro-dot ef-protein-dot"></div>
-            <span className="ef-nutrition-label">Protein</span>
-            <span className="ef-nutrition-value">80g</span>
-          </div>
-          
-          <div className="ef-macro-item-compact">
-            <div className="ef-macro-dot ef-carbs-dot"></div>
-            <span className="ef-nutrition-label">Carbs</span>
-            <span className="ef-nutrition-value">150g</span>
-          </div>
-          
-          <div className="ef-macro-item-compact">
-            <div className="ef-macro-dot ef-fats-dot"></div>
-            <span className="ef-nutrition-label">Fats</span>
-            <span className="ef-nutrition-value">50g</span>
-          </div>
+        <div className="ef-macro-item-new">
+          <div className="ef-macro-dot ef-carbs-dot"></div>
+          <div className="ef-nutrition-label-bold">Carbs</div>
+          <div className="ef-nutrition-value-new">150g</div>
+        </div>
+        
+        <div className="ef-macro-item-new">
+          <div className="ef-macro-dot ef-fats-dot"></div>
+          <div className="ef-nutrition-label-bold">Fats</div>
+          <div className="ef-nutrition-value-new">50g</div>
         </div>
       </div>
     </div>
