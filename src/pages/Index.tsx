@@ -144,21 +144,21 @@ const Index = () => {
                   </div>
                   <span className="ef-kcal">66 Kcal</span>
                 </div>
-                <div className="ef-food-item-card">
+                <div className="ef-food-item-no-card">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Apple</div>
                     <div className="ef-food-portion">1 Number (100g)</div>
                   </div>
                   <span className="ef-kcal">52 Kcal</span>
                 </div>
-                <div className="ef-food-item-card">
+                <div className="ef-food-item-no-card">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Coffee (with milk)</div>
                     <div className="ef-food-portion">1 Cup (150ml)</div>
                   </div>
                   <span className="ef-kcal">86 Kcal</span>
                 </div>
-                <div className="ef-food-item-card">
+                <div className="ef-food-item-no-card">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Nestea lemon</div>
                     <div className="ef-food-portion">1 Cup (150ml)</div>
