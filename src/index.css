@@ -152,7 +152,7 @@ All colors MUST be HSL.
     text-align: center;
   }
 
-  /* Clean Nutrition Summary - Remove circular frame */
+  /* Clean Nutrition Summary */
   .ef-nutrition-summary-clean {
     margin-bottom: 20px;
     background: white;
@@ -234,7 +234,7 @@ All colors MUST be HSL.
   /* Meal Cards Container */
   .ef-meal-cards-container {
     display: grid;
-    gap: 16px;
+    gap: 20px;
     margin-bottom: 24px;
   }
 
@@ -251,7 +251,8 @@ All colors MUST be HSL.
     }
   }
 
-  .ef-meal-card {
+  /* Meal Card without border - just the container */
+  .ef-meal-card-no-border {
     background: #ffffff;
     border-radius: 16px;
     padding: 16px;
@@ -294,26 +295,25 @@ All colors MUST be HSL.
     flex-direction: column;
   }
 
-  .ef-content-area {
+  /* Content area without card styling - no gaps */
+  .ef-content-area-no-cards {
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
 
-  /* Food Item Cards */
-  .ef-food-item-card {
-    background: hsl(var(--ef-ivory));
-    border-radius: 8px;
-    padding: 12px;
+  /* Food Items without card borders - simple list items */
+  .ef-food-item-no-card {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 12px;
-    transition: all 0.2s;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
   }
 
-  .ef-food-item-card:hover {
-    background: hsl(var(--ef-green-200));
+  .ef-food-item-no-card:last-child {
+    border-bottom: none;
   }
 
   .ef-food-content {
@@ -474,7 +474,7 @@ All colors MUST be HSL.
       box-shadow: none;
     }
 
-    .ef-meal-card {
+    .ef-meal-card-no-border {
       page-break-inside: avoid;
     }
 
