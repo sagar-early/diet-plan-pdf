@@ -16,7 +16,7 @@ const Index = () => {
           {/* Card 1: Pre-Breakfast */}
           <div className="ef-meal-card">
             <h3 className="ef-meal-title">Pre-Breakfast</h3>
-            <div className="ef-meal-time">06:30 – 07:00                                             80Kcal</div>
+            <div className="ef-meal-time">06:30 – 07:00                                                80Kcal</div>
             <div className="ef-meal-separator"></div>
             
             <div className="ef-meal-sections">
