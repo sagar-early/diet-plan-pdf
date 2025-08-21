@@ -54,21 +54,21 @@ const Index = () => {
           <div className="ef-meal-sections">
             <div className="ef-meal-section">
               <div className="ef-content-area">
-                <div className="ef-food-item-no-card">
+                <div className="ef-food-item-card bg-slate-50">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Almonds</div>
                     <div className="ef-food-portion">5 Piece (2g)</div>
                   </div>
-                  <span className="-bottom-0 ">12 Kcal</span>
+                  <span className="ef-kcal">12 Kcal</span>
                 </div>
-                <div className="-bottom-0.5 ">
+                <div className="ef-food-item-card">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Cashews (Cashew nuts, salted)</div>
                     <div className="ef-food-portion">5 Piece (2g)</div>
                   </div>
                   <span className="ef-kcal">12 Kcal</span>
                 </div>
-                <div className="ef-food-item-no-card">
+                <div className="ef-food-item-card">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Green tea with mint</div>
                     <div className="ef-food-portion">1 Cup (150ml)</div>
