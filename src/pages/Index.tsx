@@ -1,5 +1,5 @@
 const Index = () => {
-  return <main className="ef-page">
+  return <main className="ef-page bg-[t#] bg-[#faf8f1]">
       {/* Full-width header card */}
       <div className="ef-header-card-full-width bg-[#393f2d]">
         <h1 className="ef-header-title-centered text-white">Diet Plan</h1>
