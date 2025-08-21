@@ -230,7 +230,7 @@ const Index = () => {
                   </div>
                   <span className="ef-kcal">87 Kcal</span>
                 </div>
-                <div className="ef-food-item-card">
+                <div className="ef-food-item-no-card">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Carrot cauliflower subji</div>
                     <div className="ef-food-portion">1 Katori (124g)</div>
@@ -311,7 +311,7 @@ const Index = () => {
                   </div>
                   <span className="ef-kcal">101 Kcal</span>
                 </div>
-                <div className="ef-food-item-card">
+                <div className="ef-food-item-no-card">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Ghiya chana dal</div>
                     <div className="ef-food-portion">1 Katori (128g)</div>
