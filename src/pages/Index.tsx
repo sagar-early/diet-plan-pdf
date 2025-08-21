@@ -61,7 +61,7 @@ const Index = () => {
                   </div>
                   <span className="-bottom-0 ">12 Kcal</span>
                 </div>
-                <div className="ef-food-item-card">
+                <div className="-bottom-0.5 ">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Cashews (Cashew nuts, salted)</div>
                     <div className="ef-food-portion">5 Piece (2g)</div>
