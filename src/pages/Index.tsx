@@ -1,9 +1,8 @@
-
 const Index = () => {
   return <main className="ef-page">
       {/* Full-width header card */}
-      <div className="ef-header-card-full-width">
-        <h1 className="ef-header-title-centered">Diet Plan</h1>
+      <div className="ef-header-card-full-width bg-[#393f2d]">
+        <h1 className="ef-header-title-centered text-white">Diet Plan</h1>
       </div>
       
       {/* Nutritional Summary - remove circular frame */}
@@ -392,5 +391,4 @@ const Index = () => {
       </div>
     </main>;
 };
-
 export default Index;
