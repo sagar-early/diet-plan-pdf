@@ -135,12 +135,13 @@ All colors MUST be HSL.
     text-align: left;
   }
 
-  /* Full-width Header Card */
+  /* Full-width Header Card - Remove padding */
   .ef-header-card-full-width {
     background: #e9ecef;
     border-radius: 12px;
-    padding: 20px;
-    width: 100%;
+    padding: 20px 0;
+    width: calc(100% + 32px);
+    margin-left: -16px;
     margin-bottom: 20px;
   }
 
@@ -150,6 +151,7 @@ All colors MUST be HSL.
     color: #2c3e50;
     margin: 0;
     text-align: center;
+    padding: 0 16px;
   }
 
   /* Clean Nutrition Summary - Remove circular frame */
@@ -297,30 +299,28 @@ All colors MUST be HSL.
   .ef-content-area {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
   }
 
-  /* Food Item Cards */
-  .ef-food-item-card {
-    background: hsl(var(--ef-ivory));
-    border-radius: 8px;
-    padding: 12px;
+  /* Food Item No Card - Single Row Layout */
+  .ef-food-item-no-card {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    padding: 8px 0;
     gap: 12px;
-    transition: all 0.2s;
   }
 
-  .ef-food-item-card:hover {
-    background: hsl(var(--ef-green-200));
+  .ef-food-item-no-card:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .ef-food-content {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 2px;
   }
 
   .ef-food-name {
@@ -341,6 +341,22 @@ All colors MUST be HSL.
     color: #444444;
     flex-shrink: 0;
     text-align: right;
+  }
+
+  /* Food Item Cards */
+  .ef-food-item-card {
+    background: hsl(var(--ef-ivory));
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    transition: all 0.2s;
+  }
+
+  .ef-food-item-card:hover {
+    background: hsl(var(--ef-green-200));
   }
 
   /* Visual Separator Line */
@@ -396,12 +412,13 @@ All colors MUST be HSL.
     object-fit: contain;
   }
 
-  /* Footer Card - Full Width */
+  /* Footer Card - Full Width - Remove padding */
   .ef-footer-card-full-width {
     background: #e9ecef;
     border-radius: 12px;
-    padding: 20px;
-    width: 100%;
+    padding: 20px 0;
+    width: calc(100% + 32px);
+    margin-left: -16px;
     margin-top: 20px;
   }
 
@@ -409,6 +426,7 @@ All colors MUST be HSL.
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 16px;
   }
 
   .ef-footer-logo {
@@ -431,6 +449,16 @@ All colors MUST be HSL.
   @media (max-width: 768px) {
     .ef-page {
       padding: 12px;
+    }
+
+    .ef-header-card-full-width {
+      width: calc(100% + 24px);
+      margin-left: -12px;
+    }
+
+    .ef-footer-card-full-width {
+      width: calc(100% + 24px);
+      margin-left: -12px;
     }
 
     .ef-cheat-content-full {
