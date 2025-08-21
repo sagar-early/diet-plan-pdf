@@ -379,7 +379,7 @@ const Index = () => {
       </div>
 
       {/* Footer Card - Full Width */}
-      <div className="ef-footer-card-full-width">
+      <div className="ef-footer-card-full-width bg-[#393f2d]">
         <div className="ef-footer-content">
           <div className="ef-footer-logo">
             <img src="/lovable-uploads/0518c066-6a07-4c02-a451-7aa1394cfa2a.png" alt="Early logo" className="ef-footer-logo-image" />
