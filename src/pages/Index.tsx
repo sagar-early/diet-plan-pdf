@@ -54,7 +54,7 @@ const Index = () => {
           <div className="ef-meal-sections">
             <div className="ef-meal-section">
               <div className="ef-content-area">
-                <div className="ef-food-item-no-card bg-slate-50">
+                <div className="ef-food-item-no-card bg-slate-100">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Almonds</div>
                     <div className="ef-food-portion">5 Piece (2g)</div>
