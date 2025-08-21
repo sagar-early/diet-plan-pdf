@@ -75,14 +75,14 @@ const Index = () => {
                   </div>
                   <span className="ef-kcal">16 Kcal</span>
                 </div>
-                <div className="ef-food-item-card">
+                <div className="ef-food-item-no-card">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Mint tea without sugar</div>
                     <div className="ef-food-portion">1 Cup (150ml)</div>
                   </div>
                   <span className="ef-kcal">1 Kcal</span>
                 </div>
-                <div className="ef-food-item-card">
+                <div className="ef-food-item-no-card">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Kombucha (fermented tea)</div>
                     <div className="ef-food-portion">1 Cup (150ml)</div>
