@@ -105,14 +105,14 @@ const Index = () => {
           <div className="ef-meal-sections">
             <div className="ef-meal-section">
               <div className="ef-content-area">
-                <div className="ef-food-item-card">
+                <div className="ef-food-item-no-card">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Chicken omelette</div>
                     <div className="ef-food-portion">3 Egg Whites (120g)</div>
                   </div>
                   <span className="ef-kcal">203 Kcal</span>
                 </div>
-                <div className="ef-food-item-card">
+                <div className="ef-food-item-no-card">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Cornflakes chivda</div>
                     <div className="ef-food-portion">1 Bowl (40g)</div>
