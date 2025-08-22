@@ -363,22 +363,6 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Cheat Meal Card - Full Width */}
-      <div className="ef-cheat-meal-card-full-width">
-        <div className="ef-cheat-content-full">
-          <div className="ef-cheat-text-content">
-            <h3 className="ef-cheat-title">Cheat Meal
- (Sunday-Lunch)</h3>
-            <p className="ef-cheat-description">
-              Enjoy your Sunday brunch at your favourite place, make sure to keep it within 300kcal
-            </p>
-          </div>
-          <div className="ef-cheat-image">
-            <img src="/lovable-uploads/629dad21-2eb8-42da-a4ed-cfdfb41bc83d.png" alt="Sparrow holding hamburger" className="ef-sparrow-image" />
-          </div>
-        </div>
-      </div>
-
     <div className="sparrow-chat-container">
 
       {/* The sparrow image */}
