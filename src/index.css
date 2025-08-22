@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -508,74 +509,5 @@ All colors MUST be HSL.
     .ef-cheat-meal-card-full-width {
       page-break-inside: avoid;
     }
-  }
-
-  /* Specific styles for compact meal sections - only Breakfast and Evening Snack */
-  .ef-meal-card:has(.ef-meal-title:is([data-meal="breakfast"], [data-meal="evening-snack"])) .ef-content-area {
-    gap: 0;
-  }
-
-  .ef-meal-card:has(.ef-meal-title:is([data-meal="breakfast"], [data-meal="evening-snack"])) .ef-food-item-no-card {
-    padding: 4px 0;
-    margin: 0;
-  }
-
-  .ef-meal-card:has(.ef-meal-title:is([data-meal="breakfast"], [data-meal="evening-snack"])) .ef-visual-separator {
-    margin: 8px 0;
-  }
-
-  /* Cheat Meal Card - Updated to white background with sparrow overflow */
-  .ef-cheat-meal-card-full-width {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 24px;
-    width: 100%;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    border: 2px solid #e5e7eb;
-    position: relative;
-    overflow: visible;
-  }
-
-  .ef-cheat-content-full {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    position: relative;
-  }
-
-  .ef-cheat-text-content {
-    flex: 1;
-  }
-
-  .ef-cheat-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: #1f2937;
-    margin: 0 0 12px 0;
-  }
-
-  .ef-cheat-description {
-    font-size: 14px;
-    color: #374151;
-    margin: 0;
-    line-height: 1.4;
-  }
-
-  .ef-cheat-image {
-    flex-shrink: 0;
-    position: relative;
-    z-index: 10;
-  }
-
-  .ef-sparrow-image {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    position: relative;
-    right: -20px;
-    top: -10px;
-    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.1));
   }
 }

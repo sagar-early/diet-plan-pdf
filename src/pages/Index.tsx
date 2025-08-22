@@ -96,7 +96,7 @@ const Index = () => {
 
         {/* Card 2: Breakfast */}
         <div className="ef-meal-card">
-          <h3 className="ef-meal-title" data-meal="breakfast">Breakfast</h3>
+          <h3 className="ef-meal-title">Breakfast</h3>
           <div className="ef-meal-time">
             <span>07:30 – 08:30</span>
             <span className="ef-meal-kcal">450 Kcal</span>
@@ -251,7 +251,7 @@ const Index = () => {
 
         {/* Card 4: Evening Snack */}
         <div className="ef-meal-card">
-          <h3 className="ef-meal-title" data-meal="evening-snack">Evening Snack</h3>
+          <h3 className="ef-meal-title">Evening Snack</h3>
           <div className="ef-meal-time">
             <span>16:30 – 17:30</span>
             <span className="ef-meal-kcal">150 Kcal</span>
