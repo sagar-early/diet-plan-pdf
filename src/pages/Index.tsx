@@ -1,3 +1,4 @@
+
 const Index = () => {
   return <main className="ef-page bg-[t#] bg-[#faf8f1]">
       {/* Full-width header card */}
@@ -176,9 +177,9 @@ const Index = () => {
       </div>
 
       <div className="sparrow-chat-container">
-        {/* The sparrow image */}
+        {/* The bird image */}
         <div className="sparrow-image-container">
-          <img src="/lovable-uploads/629dad21-2eb8-42da-a4ed-cfdfb41bc83d.png" alt="Sparrow" className="sparrow-image" />
+          <img src="/lovable-uploads/6de813b1-7559-4760-bdc0-0046c97415cf.png" alt="Bird" className="sparrow-image" />
         </div>
         {/* The chat bubble containing the text */}
         <div className="ef-cheat-meal-card-full-width">
