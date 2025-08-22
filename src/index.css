@@ -580,4 +580,22 @@ All colors MUST be HSL.
   .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-meal-sections {
     padding-bottom: 0;
   }
+
+  /* --- LATEST FIX: kill trailing whitespace after last item in Pre-Breakfast & Evening Snack --- */
+  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]),
+  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) {
+    padding-bottom: 0 !important;
+  }
+
+  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) .ef-food-item-no-card:last-child,
+  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-food-item-no-card:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) .ef-content-area,
+  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-content-area {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
 }
