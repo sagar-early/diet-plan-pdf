@@ -276,6 +276,23 @@ All colors MUST be HSL.
   margin-bottom: 16px; /* Add this for spacing between cards in the same column */
 }
 
+  /* Remove bottom padding from pre-breakfast card */
+  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) {
+    padding-bottom: 0;
+  }
+
+  /* Remove bottom padding from evening snack card */
+  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) {
+    padding-bottom: 0;
+  }
+
+  /* Remove bottom padding/margin from last food item in pre-breakfast and evening snack */
+  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) .ef-food-item-no-card:last-child,
+  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-food-item-no-card:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
   .ef-meal-title {
     font-size: 18px;
     font-weight: 600;
