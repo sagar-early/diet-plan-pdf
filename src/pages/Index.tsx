@@ -96,52 +96,50 @@ const Index = () => {
 
         {/* Card 3: Lunch */}
         <div className="ef-meal-card">
-            <h3 className="ef-meal-title">Lunch</h3>
-            <div className="ef-meal-time">
-              <span>12:30 – 13:30</span>
-              <span>400 Kcal</span>
-            </div>
-            
-            <div className="ef-meal-sections">
-              <div className="ef-meal-section">
-                <h4 className="ef-section-title">Main Meals</h4>
-                <div className="ef-content-area">
-                  <div className="ef-food-item">Chicken curry – 1 Bowl (187g) <span className="ef-kcal">268 Kcal</span></div>
-                  <div className="ef-food-item">Jowar roti – 2 Piece (50g) <span className="ef-kcal">90 Kcal</span></div>
-                  <div className="ef-food-item">Curd rice (brown rice) – 1 Bowl (179g) <span className="ef-kcal">168 Kcal</span></div>
-                  <div className="ef-food-item">Rava roti – 2 Piece (52g) <span className="ef-kcal">120 Kcal</span></div>
-                  <div className="ef-food-item">Abhada dal (Sweet tur dal) – 1 Katori (126g) <span className="ef-kcal">126 Kcal</span></div>
-                  <div className="ef-food-item">Ghiya chana dal – 1 Katori (128g) <span className="ef-kcal">90 Kcal</span></div>
-                  <div className="ef-food-item">Punjabi tori subji – 1 Katori (123g) <span className="ef-kcal">87 Kcal</span></div>
-                  <div className="ef-food-item">Carrot cauliflower subji – 1 Katori (124g) <span className="ef-kcal">82 Kcal</span></div>
-                  <div className="ef-food-item">Palak matar paneer subji – 1 Katori (122g) <span className="ef-kcal">167 Kcal</span></div>
-                </div>
-              </div>
-            </div>
+          <h3 className="ef-meal-title">Lunch</h3>
+          <div className="ef-meal-time">
+            <span>12:30 – 13:30</span>
+            <span>400 Kcal</span>
           </div>
-
-        {/* Card 4: Evening Snack */}
-        <div className="ef-meal-card">
-            <h3 className="ef-meal-title">Evening Snack</h3>
-            <div className="ef-meal-time">
-              <span>16:30 – 17:30</span>
-              <span>150 Kcal</span>
-            </div>
-            
-            <div className="ef-meal-sections">
-              <div className="ef-meal-section">
-                <h4 className="ef-section-title">Sides</h4>
-                <div className="ef-content-area">
-                  <div className="ef-food-item">Roasted makhana with Indian spices – 1 Bowl (10g) <span className="ef-kcal">46 Kcal</span></div>
-                  <div className="ef-food-item">Fruit salad – 1 Bowl (140g) <span className="ef-kcal">93 Kcal</span></div>
-                  <div className="ef-food-item">Chana nuts (packaged) – 1 Handful (10g) <span className="ef-kcal">56 Kcal</span></div>
-                  <div className="ef-food-item">Chai (tea with sugar) – 1 Cup (173g) <span className="ef-kcal">59 Kcal</span></div>
-                </div>
+          
+          <div className="ef-meal-sections">
+            <div className="ef-meal-section">
+              <h4 className="ef-section-title">Main Meals</h4>
+              <div className="ef-content-area">
+                <div className="ef-food-item">Chicken curry – 1 Bowl (187g) <span className="ef-kcal">268 Kcal</span></div>
+                <div className="ef-food-item">Jowar roti – 2 Piece (50g) <span className="ef-kcal">90 Kcal</span></div>
+                <div className="ef-food-item">Curd rice (brown rice) – 1 Bowl (179g) <span className="ef-kcal">168 Kcal</span></div>
+                <div className="ef-food-item">Rava roti – 2 Piece (52g) <span className="ef-kcal">120 Kcal</span></div>
+                <div className="ef-food-item">Abhada dal (Sweet tur dal) – 1 Katori (126g) <span className="ef-kcal">126 Kcal</span></div>
+                <div className="ef-food-item">Ghiya chana dal – 1 Katori (128g) <span className="ef-kcal">90 Kcal</span></div>
+                <div className="ef-food-item">Punjabi tori subji – 1 Katori (123g) <span className="ef-kcal">87 Kcal</span></div>
+                <div className="ef-food-item">Carrot cauliflower subji – 1 Katori (124g) <span className="ef-kcal">82 Kcal</span></div>
+                <div className="ef-food-item">Palak matar paneer subji – 1 Katori (122g) <span className="ef-kcal">167 Kcal</span></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
+        {/* Card 4: Evening Snack */}
+        <div className="ef-meal-card">
+          <h3 className="ef-meal-title">Evening Snack</h3>
+          <div className="ef-meal-time">
+            <span>16:30 – 17:30</span>
+            <span>150 Kcal</span>
+          </div>
+          
+          <div className="ef-meal-sections">
+            <div className="ef-meal-section">
+              <h4 className="ef-section-title">Sides</h4>
+              <div className="ef-content-area">
+                <div className="ef-food-item">Roasted makhana with Indian spices – 1 Bowl (10g) <span className="ef-kcal">46 Kcal</span></div>
+                <div className="ef-food-item">Fruit salad – 1 Bowl (140g) <span className="ef-kcal">93 Kcal</span></div>
+                <div className="ef-food-item">Chana nuts (packaged) – 1 Handful (10g) <span className="ef-kcal">56 Kcal</span></div>
+                <div className="ef-food-item">Chai (tea with sugar) – 1 Cup (173g) <span className="ef-kcal">59 Kcal</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Card 5: Dinner */}
         <div className="ef-meal-card">
@@ -167,18 +165,17 @@ const Index = () => {
             {/* Visual separator line */}
             <div className="ef-visual-separator"></div>
             
-              <div className="ef-meal-section">
-                <h4 className="ef-section-title">Sides</h4>
-                <div className="ef-content-area">
-                  <div className="ef-food-item">Tomato cucumber onion raita – 1 Bowl (158g) <span className="ef-kcal">64 Kcal</span></div>
-                  <div className="ef-food-item">Cucumber salad – 1 Bowl (121g) <span className="ef-kcal">16 Kcal</span></div>
-                  <div className="ef-food-item">Onion salad (Pyaaz ka lachcha) – 1 Bowl (118g) <span className="ef-kcal">48 Kcal</span></div>
-                </div>
+            <div className="ef-meal-section">
+              <h4 className="ef-section-title">Sides</h4>
+              <div className="ef-content-area">
+                <div className="ef-food-item">Tomato cucumber onion raita – 1 Bowl (158g) <span className="ef-kcal">64 Kcal</span></div>
+                <div className="ef-food-item">Cucumber salad – 1 Bowl (121g) <span className="ef-kcal">16 Kcal</span></div>
+                <div className="ef-food-item">Onion salad (Pyaaz ka lachcha) – 1 Bowl (118g) <span className="ef-kcal">48 Kcal</span></div>
               </div>
             </div>
           </div>
-
         </div>
+      </div>
 
       <div className="sparrow-chat-container">
         {/* The sparrow image */}
