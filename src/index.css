@@ -439,6 +439,16 @@ All colors MUST be HSL.
     transition: all 0.2s;
   }
 
+  .ef-food-item {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: hsl(var(--ef-espresso));
+  }
+
   .ef-food-item-card:hover {
     background: hsl(var(--ef-green-200));
   }
