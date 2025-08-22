@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
 All colors MUST be HSL.
 */
 
@@ -39,19 +39,30 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     /* Early Diet Plan Colors - Updated to match new specifications */
-    --ef-green-900: 77 24% 22%; /* #434a35 */
-    --ef-green-600: 75 15% 55%; /* #798660 */
-    --ef-green-500: 79 18% 65%; /* #abb597 */
-    --ef-green-200: 80 22% 84%; /* #dbdfd2 */
-    
-    --ef-lime: 76 80% 45%; /* #9cd312 - Updated to match new spec */
-    --ef-purple: 304 21% 66%; /* #927b9e */
-    
-    --ef-cream: 60 59% 96%; /* #faf8f1 */
-    --ef-ivory: 52 73% 95%; /* #fff4e2 */
-    --ef-cloud: 207 21% 86%; /* #dde2e8 */
-    --ef-sand: 37 45% 82%; /* #efd7b5 */
-    --ef-espresso: 30 52% 16%; /* #3a1f12 */
+    --ef-green-900: 77 24% 22%;
+    /* #434a35 */
+    --ef-green-600: 75 15% 55%;
+    /* #798660 */
+    --ef-green-500: 79 18% 65%;
+    /* #abb597 */
+    --ef-green-200: 80 22% 84%;
+    /* #dbdfd2 */
+
+    --ef-lime: 76 80% 45%;
+    /* #9cd312 - Updated to match new spec */
+    --ef-purple: 304 21% 66%;
+    /* #927b9e */
+
+    --ef-cream: 60 59% 96%;
+    /* #faf8f1 */
+    --ef-ivory: 52 73% 95%;
+    /* #fff4e2 */
+    --ef-cloud: 207 21% 86%;
+    /* #dde2e8 */
+    --ef-sand: 37 45% 82%;
+    /* #efd7b5 */
+    --ef-espresso: 30 52% 16%;
+    /* #3a1f12 */
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -106,6 +117,7 @@ All colors MUST be HSL.
   @page {
     margin: 0;
   }
+
   body {
     margin: 0;
   }
@@ -225,7 +237,7 @@ All colors MUST be HSL.
     color: #444;
     font-weight: 600;
   }
-  
+
   .ef-macro-value {
     font-size: 14px;
     color: #666;
@@ -508,12 +520,12 @@ All colors MUST be HSL.
     @page {
       margin: 2px;
     }
-    
+
     body {
       margin: 0;
       padding: 0;
     }
-    
+
     .ef-page {
       max-width: none;
       margin: 0;
@@ -558,21 +570,22 @@ All colors MUST be HSL.
   }
 
   /* --- FINAL FIX: Remove trailing whitespace for Pre-Breakfast & Evening Snack --- */
-  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]),
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) {
-    padding-bottom: 0 !important;   /* remove any bottom padding on the card */
+  .ef-meal-card[data-meal-type="pre-breakfast"],
+  .ef-meal-card[data-meal-type="evening-snack"] {
+    padding-bottom: 0 !important;
+    /* remove any bottom padding on the card */
   }
 
-  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) .ef-content-area,
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-content-area,
-  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) .ef-meal-sections,
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-meal-sections {
+  .ef-meal-card[data-meal-type="pre-breakfast"] .ef-content-area,
+  .ef-meal-card[data-meal-type="evening-snack"] .ef-content-area,
+  .ef-meal-card[data-meal-type="pre-breakfast"] .ef-meal-sections,
+  .ef-meal-card[data-meal-type="evening-snack"] .ef-meal-sections {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
 
-  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) .ef-food-item-no-card:last-child,
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-food-item-no-card:last-child {
+  .ef-meal-card[data-meal-type="pre-breakfast"] .ef-food-item-no-card:last-child,
+  .ef-meal-card[data-meal-type="evening-snack"] .ef-food-item-no-card:last-child {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
