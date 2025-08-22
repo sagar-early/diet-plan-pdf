@@ -118,8 +118,8 @@ const Index = () => {
             </div>
           </div>
 
-        {/* Card 4: Evening Snack */}
-        <div className="ef-meal-card">
+         {/* Card 4: Evening Snack */}
+          <div className="ef-meal-card">
             <h3 className="ef-meal-title">Evening Snack</h3>
             <div className="ef-meal-time">
               <span>16:30 – 17:30</span>
