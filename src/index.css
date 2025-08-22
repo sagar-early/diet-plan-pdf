@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
 All colors MUST be HSL.
 */
 
@@ -537,28 +537,12 @@ All colors MUST be HSL.
     }
   }
 
-  /* Specific styles for compact meal sections - only Breakfast and Evening Snack */
-  .ef-meal-card:has(.ef-meal-title:is([data-meal="breakfast"], [data-meal="evening-snack"])) .ef-content-area {
-    gap: 0;
-  }
-
-  .ef-meal-card:has(.ef-meal-title:is([data-meal="breakfast"], [data-meal="evening-snack"])) .ef-food-item-no-card {
-    padding: 4px 0;
-    margin: 0;
-  }
-
-  .ef-meal-card:has(.ef-meal-title:is([data-meal="breakfast"], [data-meal="evening-snack"])) .ef-visual-separator {
-    margin: 8px 0;
-  }
-
-  /* The most specific rule to target the last food item. */
-  .ef-meal-card .ef-food-item-no-card:last-child {
+  /* Final fix to remove all whitespace at the bottom of the card */
+  .ef-meal-card:has(.ef-meal-title:is([data-meal="pre-breakfast"], [data-meal="evening-snack"])) {
     padding-bottom: 0 !important;
   }
 
-  /* Also, explicitly remove padding on the meal card for these specific meals */
-  .ef-meal-card[data-meal-type="pre-breakfast"],
-  .ef-meal-card[data-meal-type="evening-snack"] {
-    padding-bottom: 0 !important;
+  .ef-meal-card:has(.ef-meal-title:is([data-meal="pre-breakfast"], [data-meal="evening-snack"])) .ef-food-item-no-card:last-child {
+    padding-bottom: 0;
   }
 }
