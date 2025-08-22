@@ -96,82 +96,29 @@ const Index = () => {
 
         {/* Card 3: Lunch */}
         <div className="ef-meal-card">
-          <h3 className="ef-meal-title">Lunch</h3>
-          <div className="ef-meal-time">
-            <span>12:30 – 13:30</span>
-            <span className="ef-meal-kcal">400 Kcal</span>
-          </div>
-          
-          <div className="ef-meal-sections">
-            <div className="ef-meal-section">
-              <div className="ef-content-area">
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Chicken curry</div>
-                    <div className="ef-food-portion">1 Bowl (187g)</div>
-                  </div>
-                  <span className="ef-kcal">268 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Jowar roti</div>
-                    <div className="ef-food-portion">2 Piece (50g)</div>
-                  </div>
-                  <span className="ef-kcal">90 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Curd rice (brown rice)</div>
-                    <div className="ef-food-portion">1 Bowl (179g)</div>
-                  </div>
-                  <span className="ef-kcal">168 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Rava roti</div>
-                    <div className="ef-food-portion">2 Piece (52g)</div>
-                  </div>
-                  <span className="ef-kcal">120 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Abhada dal (Sweet tur dal)</div>
-                    <div className="ef-food-portion">1 Katori (126g)</div>
-                  </div>
-                  <span className="ef-kcal">126 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Ghiya chana dal</div>
-                    <div className="ef-food-portion">1 Katori (128g)</div>
-                  </div>
-                  <span className="ef-kcal">90 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Punjabi tori subji</div>
-                    <div className="ef-food-portion">1 Katori (123g)</div>
-                  </div>
-                  <span className="ef-kcal">87 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Carrot cauliflower subji</div>
-                    <div className="ef-food-portion">1 Katori (124g)</div>
-                  </div>
-                  <span className="ef-kcal">82 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Palak matar paneer subji</div>
-                    <div className="ef-food-portion">1 Katori (122g)</div>
-                  </div>
-                  <span className="ef-kcal">167 Kcal</span>
+            <h3 className="ef-meal-title">Lunch</h3>
+            <div className="ef-meal-time">
+              <span>12:30 – 13:30</span>
+              <span>400 Kcal</span>
+            </div>
+            
+            <div className="ef-meal-sections">
+              <div className="ef-meal-section">
+                <h4 className="ef-section-title">Main Meals</h4>
+                <div className="ef-content-area">
+                  <div className="ef-food-item">Chicken curry – 1 Bowl (187g) <span className="ef-kcal">268 Kcal</span></div>
+                  <div className="ef-food-item">Jowar roti – 2 Piece (50g) <span className="ef-kcal">90 Kcal</span></div>
+                  <div className="ef-food-item">Curd rice (brown rice) – 1 Bowl (179g) <span className="ef-kcal">168 Kcal</span></div>
+                  <div className="ef-food-item">Rava roti – 2 Piece (52g) <span className="ef-kcal">120 Kcal</span></div>
+                  <div className="ef-food-item">Abhada dal (Sweet tur dal) – 1 Katori (126g) <span className="ef-kcal">126 Kcal</span></div>
+                  <div className="ef-food-item">Ghiya chana dal – 1 Katori (128g) <span className="ef-kcal">90 Kcal</span></div>
+                  <div className="ef-food-item">Punjabi tori subji – 1 Katori (123g) <span className="ef-kcal">87 Kcal</span></div>
+                  <div className="ef-food-item">Carrot cauliflower subji – 1 Katori (124g) <span className="ef-kcal">82 Kcal</span></div>
+                  <div className="ef-food-item">Palak matar paneer subji – 1 Katori (122g) <span className="ef-kcal">167 Kcal</span></div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
         {/* Card 4: Evening Snack */}
         <div className="ef-meal-card">
