@@ -119,48 +119,32 @@ const Index = () => {
           </div>
 
         {/* Card 4: Evening Snack */}
-        <div className="ef-meal-card">
-          <h3 className="ef-meal-title" data-meal="evening-snack">Evening Snack</h3>
-          <div className="ef-meal-time">
-            <span>16:30 – 17:30</span>
-            <span className="ef-meal-kcal">150 Kcal</span>
-          </div>
-          
-          <div className="ef-meal-sections">
-            <div className="ef-meal-section">
-              <div className="ef-content-area">
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Roasted makhana with Indian spices</div>
-                    <div className="ef-food-portion">1 Bowl (10g)</div>
-                  </div>
-                  <span className="ef-kcal">46 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Fruit salad</div>
-                    <div className="ef-food-portion">1 Bowl (140g)</div>
-                  </div>
-                  <span className="ef-kcal">93 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Chana nuts (packaged)</div>
-                    <div className="ef-food-portion">1 Handful (10g)</div>
-                  </div>
-                  <span className="ef-kcal">56 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Chai (tea with sugar)</div>
-                    <div className="ef-food-portion">1 Cup (173g)</div>
-                  </div>
-                  <span className="ef-kcal">59 Kcal</span>
+          <div className="ef-meal-card">
+            <h3 className="ef-meal-title">Evening Snack</h3>
+            <div className="ef-meal-time">
+              <span>16:30 – 17:30</span>
+              <span>150 Kcal</span>
+            </div>
+            
+            <div className="ef-meal-sections">
+              <div className="ef-meal-section">
+                <h4 className="ef-section-title">Sides</h4>
+                <div className="ef-content-area">
+                  <div className="ef-food-item">Roasted makhana with Indian spices – 1 Bowl (10g) <span className="ef-kcal">46 Kcal</span></div>
+                  <div className="ef-food-item">Fruit salad – 1 Bowl (140g) <span className="ef-kcal">93 Kcal</span></div>
+                  <div className="ef-food-item">Chana nuts (packaged) – 1 Handful (10g) <span className="ef-kcal">56 Kcal</span></div>
+                  <div className="ef-food-item">Chai (tea with sugar) – 1 Cup (173g) <span className="ef-kcal">59 Kcal</span></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Page 2 */}
+      <div className="ef-page-content ef-page-2">
+        {/* Remaining 2 meal cards */}
+        <div className="ef-meal-cards-grid">
 
         {/* Card 5: Dinner */}
         <div className="ef-meal-card">
