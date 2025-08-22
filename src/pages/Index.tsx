@@ -296,7 +296,7 @@ const Index = () => {
           />
         </div>
         {/* The chat bubble containing the text */}
-        <div className="chat-bubble">
+        <div className="cheat-meal-card">
           <div className="ef-cheat-text-content">
             <h3 className="ef-cheat-title">Cheat Meal (Sunday-Lunch)</h3>
             <p className="ef-cheat-description">
