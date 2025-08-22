@@ -366,14 +366,17 @@ All colors MUST be HSL.
     width: 100%;
   }
 
-  /* Cheat Meal Card - Full Width */
+  /* Cheat Meal Card - White background with sparrow overflow */
   .ef-cheat-meal-card-full-width {
-    background: linear-gradient(135deg, #9cd312, #927b9e);
+    background: #ffffff;
     border-radius: 16px;
     padding: 24px;
     width: 100%;
     margin-bottom: 20px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e5e7eb;
+    position: relative;
+    overflow: visible;
   }
 
   .ef-cheat-content-full {
@@ -381,34 +384,42 @@ All colors MUST be HSL.
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    position: relative;
   }
 
   .ef-cheat-text-content {
     flex: 1;
+    text-align: left;
   }
 
   .ef-cheat-title {
     font-size: 20px;
     font-weight: 700;
-    color: hsl(var(--ef-espresso));
+    color: #1f2937;
     margin: 0 0 12px 0;
   }
 
   .ef-cheat-description {
     font-size: 14px;
-    color: hsl(var(--ef-espresso));
+    color: #374151;
     margin: 0;
     line-height: 1.4;
   }
 
   .ef-cheat-image {
     flex-shrink: 0;
+    position: relative;
+    z-index: 10;
   }
 
   .ef-sparrow-image {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
+    position: relative;
+    right: -30px;
+    top: -20px;
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.1));
   }
 
   /* Footer Card - Full Width - Remove padding */
@@ -465,6 +476,10 @@ All colors MUST be HSL.
       text-align: center;
     }
 
+    .ef-cheat-text-content {
+      text-align: center;
+    }
+
     .ef-footer-content {
       flex-direction: column;
       gap: 12px;
@@ -480,6 +495,11 @@ All colors MUST be HSL.
     .ef-macro-labels-horizontal {
       justify-content: flex-start;
       gap: 16px;
+    }
+
+    .ef-sparrow-image {
+      right: -15px;
+      top: -10px;
     }
   }
 
@@ -510,72 +530,30 @@ All colors MUST be HSL.
     }
   }
 
-  /* Specific styles for compact meal sections - only Breakfast and Evening Snack */
-  .ef-meal-card:has(.ef-meal-title:is([data-meal="breakfast"], [data-meal="evening-snack"])) .ef-content-area {
+  /* Compact styles for Breakfast and Evening Snack sections */
+  .ef-meal-card:has(.ef-meal-title[data-meal="breakfast"]) .ef-content-area,
+  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-content-area {
     gap: 0;
   }
 
-  .ef-meal-card:has(.ef-meal-title:is([data-meal="breakfast"], [data-meal="evening-snack"])) .ef-food-item-no-card {
-    padding: 4px 0;
+  .ef-meal-card:has(.ef-meal-title[data-meal="breakfast"]) .ef-food-item-no-card,
+  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-food-item-no-card {
+    padding: 2px 0;
     margin: 0;
   }
 
-  .ef-meal-card:has(.ef-meal-title:is([data-meal="breakfast"], [data-meal="evening-snack"])) .ef-visual-separator {
+  .ef-meal-card:has(.ef-meal-title[data-meal="breakfast"]) .ef-food-item-no-card:last-child,
+  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-food-item-no-card:last-child {
+    padding-bottom: 0;
+  }
+
+  .ef-meal-card:has(.ef-meal-title[data-meal="breakfast"]) .ef-visual-separator,
+  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-visual-separator {
     margin: 8px 0;
   }
 
-  /* Cheat Meal Card - Updated to white background with sparrow overflow */
-  .ef-cheat-meal-card-full-width {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 24px;
-    width: 100%;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    border: 2px solid #e5e7eb;
-    position: relative;
-    overflow: visible;
-  }
-
-  .ef-cheat-content-full {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    position: relative;
-  }
-
-  .ef-cheat-text-content {
-    flex: 1;
-  }
-
-  .ef-cheat-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: #1f2937;
-    margin: 0 0 12px 0;
-  }
-
-  .ef-cheat-description {
-    font-size: 14px;
-    color: #374151;
-    margin: 0;
-    line-height: 1.4;
-  }
-
-  .ef-cheat-image {
-    flex-shrink: 0;
-    position: relative;
-    z-index: 10;
-  }
-
-  .ef-sparrow-image {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    position: relative;
-    right: -20px;
-    top: -10px;
-    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.1));
+  .ef-meal-card:has(.ef-meal-title[data-meal="breakfast"]) .ef-meal-sections,
+  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-meal-sections {
+    padding-bottom: 0;
   }
 }
