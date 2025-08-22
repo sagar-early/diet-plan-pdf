@@ -380,12 +380,8 @@ const Index = () => {
       </div>
 
     <div className="sparrow-chat-container">
-  {/* The chat bubble containing the text */}
-  <div className="chat-bubble">
-    <h3>What's Your Weight?</h3>
-  </div>
 
-  {/* The sparrow image */}
+      {/* The sparrow image */}
   <div className="sparrow-image-container">
     <img 
       src="/lovable-uploads/629dad21-2eb8-42da-a4ed-cfdfb41bc83d.png" 
@@ -393,6 +389,18 @@ const Index = () => {
       className="sparrow-image" 
     />
   </div>
+  {/* The chat bubble containing the text */}
+  <div className="chat-bubble">
+    <div className="ef-cheat-text-content">
+            <h3 className="ef-cheat-title">Cheat Meal
+ (Sunday-Lunch)</h3>
+            <p className="ef-cheat-description">
+              Enjoy your Sunday brunch at your favourite place, make sure to keep it within 300kcal
+            </p>
+          </div>
+  </div>
+
+  
 </div>
 
       {/* Footer Card - Full Width */}
