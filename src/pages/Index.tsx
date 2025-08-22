@@ -102,9 +102,9 @@ const Index = () => {
           
           <div className="ef-meal-sections">
             <div className="ef-meal-section">
-              <h4 className="ef-section-title">Main Meals</h4>
+              
               <div className="ef-content-area">
-                <div className="ef-food-item">Chicken curry – 1 Bowl (187g) <span className="ef-kcal">268 Kcal</span></div>
+                
                 <div className="ef-food-item">Jowar roti – 2 Piece (50g) <span className="ef-kcal">90 Kcal</span></div>
                 <div className="ef-food-item">Curd rice (brown rice) – 1 Bowl (179g) <span className="ef-kcal">168 Kcal</span></div>
                 <div className="ef-food-item">Rava roti – 2 Piece (52g) <span className="ef-kcal">120 Kcal</span></div>
