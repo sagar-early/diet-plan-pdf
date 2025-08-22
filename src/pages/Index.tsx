@@ -374,7 +374,7 @@ const Index = () => {
             </p>
           </div>
           <div className="ef-cheat-image">
-            <img src="/lovable-uploads/629dad21-2eb8-42da-a4ed-cfdfb41bc83d.png" alt="Sparrow holding hamburger" className="-bottom-12 " />
+            <img src="/lovable-uploads/629dad21-2eb8-42da-a4ed-cfdfb41bc83d.png" alt="Sparrow holding hamburger" className="ef-sparrow-image" />
           </div>
         </div>
       </div>
