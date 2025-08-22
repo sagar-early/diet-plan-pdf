@@ -1,5 +1,7 @@
+
 const Index = () => {
-  return <main className="ef-page bg-[t#] bg-[#faf8f1]">
+  return (
+    <main className="ef-page bg-[t#] bg-[#faf8f1]">
       {/* Full-width header card */}
       <div className="ef-header-card-full-width bg-[#393f2d]">
         <h1 className="ef-header-title-centered text-white">Diet Plan</h1>
@@ -76,17 +78,17 @@ const Index = () => {
             <div className="ef-meal-section">
               <div className="ef-content-area">
                 <div className="ef-food-item">Chicken omelette – 3 Egg Whites (120g) <span className="ef-kcal">203 Kcal</span></div>
-                  <div className="ef-food-item">Cornflakes chivda – 1 Bowl (40g) <span className="ef-kcal">194 Kcal</span></div>
-                  <div className="ef-food-item">Moong dal chilla – 2 Piece (110g) <span className="ef-kcal">196 Kcal</span></div>
-                  <div className="ef-food-item">Brown bread chilla – 2 Piece (100g) <span className="ef-kcal">276 Kcal</span></div>
+                <div className="ef-food-item">Cornflakes chivda – 1 Bowl (40g) <span className="ef-kcal">194 Kcal</span></div>
+                <div className="ef-food-item">Moong dal chilla – 2 Piece (110g) <span className="ef-kcal">196 Kcal</span></div>
+                <div className="ef-food-item">Brown bread chilla – 2 Piece (100g) <span className="ef-kcal">276 Kcal</span></div>
                 
                 {/* Visual separator line */}
                 <div className="ef-visual-separator"></div>
                 
                 <div className="ef-food-item">Fruit salad – 1 Bowl (100g) <span className="ef-kcal">66 Kcal</span></div>
-                  <div className="ef-food-item">Apple – 1 Number (100g) <span className="ef-kcal">52 Kcal</span></div>
-                  <div className="ef-food-item">Coffee (with milk) – 1 Cup (150ml) <span className="ef-kcal">86 Kcal</span></div>
-                  <div className="ef-food-item">Nestea lemon – 1 Cup (150ml) <span className="ef-kcal">54 Kcal</span></div>
+                <div className="ef-food-item">Apple – 1 Number (100g) <span className="ef-kcal">52 Kcal</span></div>
+                <div className="ef-food-item">Coffee (with milk) – 1 Cup (150ml) <span className="ef-kcal">86 Kcal</span></div>
+                <div className="ef-food-item">Nestea lemon – 1 Cup (150ml) <span className="ef-kcal">54 Kcal</span></div>
               </div>
             </div>
           </div>
@@ -217,28 +219,30 @@ const Index = () => {
 
         {/* Card 5: Dinner */}
         <div className="ef-meal-card">
-            <h3 className="ef-meal-title">Dinner</h3>
-            <div className="ef-meal-time">
-              <span>19:30 – 21:00</span>
-              <span>400 Kcal</span>
+          <h3 className="ef-meal-title">Dinner</h3>
+          <div className="ef-meal-time">
+            <span>19:30 – 21:00</span>
+            <span className="ef-meal-kcal">400 Kcal</span>
+          </div>
+          
+          <div className="ef-meal-sections">
+            <div className="ef-meal-section">
+              <h4 className="ef-section-title">Main Meals</h4>
+              <div className="ef-content-area">
+                <div className="ef-food-item">Tomato tur dal – 1 Katori (130g) <span className="ef-kcal">101 Kcal</span></div>
+                <div className="ef-food-item">Ghiya chana dal – 1 Katori (128g) <span className="ef-kcal">90 Kcal</span></div>
+                <div className="ef-food-item">Urad dal – 1 Katori (125g) <span className="ef-kcal">101 Kcal</span></div>
+                <div className="ef-food-item">Brown rice cooked – 1 Bowl (164g) <span className="ef-kcal">185 Kcal</span></div>
+                <div className="ef-food-item">Dal paneer – 1 Katori (129g) <span className="ef-kcal">155 Kcal</span></div>
+                <div className="ef-food-item">Moong dal – 1 Katori (127g) <span className="ef-kcal">117 Kcal</span></div>
+              </div>
             </div>
             
-            <div className="ef-meal-sections">
-              <div className="ef-meal-section">
-                <h4 className="ef-section-title">Main Meals</h4>
-                <div className="ef-content-area">
-                  <div className="ef-food-item">Tomato tur dal – 1 Katori (130g) <span className="ef-kcal">101 Kcal</span></div>
-                  <div className="ef-food-item">Ghiya chana dal – 1 Katori (128g) <span className="ef-kcal">90 Kcal</span></div>
-                  <div className="ef-food-item">Urad dal – 1 Katori (125g) <span className="ef-kcal">101 Kcal</span></div>
-                  <div className="ef-food-item">Brown rice cooked – 1 Bowl (164g) <span className="ef-kcal">185 Kcal</span></div>
-                  <div className="ef-food-item">Dal paneer – 1 Katori (129g) <span className="ef-kcal">155 Kcal</span></div>
-                  <div className="ef-food-item">Moong dal – 1 Katori (127g) <span className="ef-kcal">117 Kcal</span></div>
-                </div>
-              </div>
-                
-                {/* Visual separator line */}
-                <div className="ef-visual-separator"></div>
-                
+            {/* Visual separator line */}
+            <div className="ef-visual-separator"></div>
+            
+            <div className="ef-meal-section">
+              <div className="ef-content-area">
                 <div className="ef-food-item-no-card">
                   <div className="ef-food-content">
                     <div className="ef-food-name">Tomato cucumber onion raita</div>
@@ -288,9 +292,10 @@ const Index = () => {
           <div className="ef-footer-logo">
             <img src="/lovable-uploads/0518c066-6a07-4c02-a451-7aa1394cfa2a.png" alt="Early logo" className="ef-footer-logo-image" />
           </div>
-          
         </div>
       </div>
-    </main>;
+    </main>
+  );
 };
+
 export default Index;
