@@ -1,4 +1,3 @@
-
 const Index = () => {
   return <main className="ef-page bg-[t#] bg-[#faf8f1]">
       {/* Full-width header card */}
@@ -46,7 +45,7 @@ const Index = () => {
       <div className="ef-meal-cards-container">
         {/* Card 1: Pre-Breakfast */}
         <div className="ef-meal-card">
-          <h3 className="ef-meal-title" data-meal="pre-breakfast">Pre-Breakfast</h3>
+          <h3 className="ef-meal-title">Pre-Breakfast</h3>
           <div className="ef-meal-time">
             <span>06:30 – 07:00</span>
             <span className="ef-meal-kcal">80 Kcal</span>

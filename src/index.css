@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
 
@@ -39,30 +39,19 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     /* Early Diet Plan Colors - Updated to match new specifications */
-    --ef-green-900: 77 24% 22%;
-    /* #434a35 */
-    --ef-green-600: 75 15% 55%;
-    /* #798660 */
-    --ef-green-500: 79 18% 65%;
-    /* #abb597 */
-    --ef-green-200: 80 22% 84%;
-    /* #dbdfd2 */
-
-    --ef-lime: 76 80% 45%;
-    /* #9cd312 - Updated to match new spec */
-    --ef-purple: 304 21% 66%;
-    /* #927b9e */
-
-    --ef-cream: 60 59% 96%;
-    /* #faf8f1 */
-    --ef-ivory: 52 73% 95%;
-    /* #fff4e2 */
-    --ef-cloud: 207 21% 86%;
-    /* #dde2e8 */
-    --ef-sand: 37 45% 82%;
-    /* #efd7b5 */
-    --ef-espresso: 30 52% 16%;
-    /* #3a1f12 */
+    --ef-green-900: 77 24% 22%; /* #434a35 */
+    --ef-green-600: 75 15% 55%; /* #798660 */
+    --ef-green-500: 79 18% 65%; /* #abb597 */
+    --ef-green-200: 80 22% 84%; /* #dbdfd2 */
+    
+    --ef-lime: 76 80% 45%; /* #9cd312 - Updated to match new spec */
+    --ef-purple: 304 21% 66%; /* #927b9e */
+    
+    --ef-cream: 60 59% 96%; /* #faf8f1 */
+    --ef-ivory: 52 73% 95%; /* #fff4e2 */
+    --ef-cloud: 207 21% 86%; /* #dde2e8 */
+    --ef-sand: 37 45% 82%; /* #efd7b5 */
+    --ef-espresso: 30 52% 16%; /* #3a1f12 */
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -117,7 +106,6 @@ All colors MUST be HSL.
   @page {
     margin: 0;
   }
-
   body {
     margin: 0;
   }
@@ -237,7 +225,7 @@ All colors MUST be HSL.
     color: #444;
     font-weight: 600;
   }
-
+  
   .ef-macro-value {
     font-size: 14px;
     color: #666;
@@ -247,7 +235,7 @@ All colors MUST be HSL.
   /* Meal Cards Container */
   .ef-meal-cards-container {
     display: grid;
-    gap: 10px;
+    gap: 16px;
     margin-bottom: 24px;
   }
 
@@ -378,17 +366,14 @@ All colors MUST be HSL.
     width: 100%;
   }
 
-  /* Cheat Meal Card - White background with sparrow overflow */
+  /* Cheat Meal Card - Full Width */
   .ef-cheat-meal-card-full-width {
-    background: #ffffff;
+    background: linear-gradient(135deg, #9cd312, #927b9e);
     border-radius: 16px;
     padding: 24px;
     width: 100%;
     margin-bottom: 20px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    border: 2px solid #e5e7eb;
-    position: relative;
-    overflow: visible;
   }
 
   .ef-cheat-content-full {
@@ -396,42 +381,34 @@ All colors MUST be HSL.
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    position: relative;
   }
 
   .ef-cheat-text-content {
     flex: 1;
-    text-align: left;
   }
 
   .ef-cheat-title {
     font-size: 20px;
     font-weight: 700;
-    color: #1f2937;
+    color: hsl(var(--ef-espresso));
     margin: 0 0 12px 0;
   }
 
   .ef-cheat-description {
     font-size: 14px;
-    color: #374151;
+    color: hsl(var(--ef-espresso));
     margin: 0;
     line-height: 1.4;
   }
 
   .ef-cheat-image {
     flex-shrink: 0;
-    position: relative;
-    z-index: 10;
   }
 
   .ef-sparrow-image {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
-    position: relative;
-    right: -30px;
-    top: -20px;
-    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.1));
   }
 
   /* Footer Card - Full Width - Remove padding */
@@ -488,10 +465,6 @@ All colors MUST be HSL.
       text-align: center;
     }
 
-    .ef-cheat-text-content {
-      text-align: center;
-    }
-
     .ef-footer-content {
       flex-direction: column;
       gap: 12px;
@@ -508,11 +481,6 @@ All colors MUST be HSL.
       justify-content: flex-start;
       gap: 16px;
     }
-
-    .ef-sparrow-image {
-      right: -15px;
-      top: -10px;
-    }
   }
 
   /* Print Styles */
@@ -520,12 +488,12 @@ All colors MUST be HSL.
     @page {
       margin: 2px;
     }
-
+    
     body {
       margin: 0;
       padding: 0;
     }
-
+    
     .ef-page {
       max-width: none;
       margin: 0;
@@ -542,51 +510,72 @@ All colors MUST be HSL.
     }
   }
 
-  /* --- Spacing adjustments for specific sections (keep compact look) --- */
-  .ef-meal-card:has(.ef-meal-title[data-meal="breakfast"]) .ef-content-area,
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-content-area {
+  /* Specific styles for compact meal sections - only Breakfast and Evening Snack */
+  .ef-meal-card:has(.ef-meal-title:is([data-meal="breakfast"], [data-meal="evening-snack"])) .ef-content-area {
     gap: 0;
   }
 
-  .ef-meal-card:has(.ef-meal-title[data-meal="breakfast"]) .ef-food-item-no-card,
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-food-item-no-card {
-    padding: 2px 0;
+  .ef-meal-card:has(.ef-meal-title:is([data-meal="breakfast"], [data-meal="evening-snack"])) .ef-food-item-no-card {
+    padding: 4px 0;
     margin: 0;
   }
 
-  .ef-meal-card:has(.ef-meal-title[data-meal="breakfast"]) .ef-food-item-no-card:last-child,
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-food-item-no-card:last-child {
-    padding-bottom: 0;
-  }
-
-  .ef-meal-card:has(.ef-meal-title[data-meal="breakfast"]) .ef-visual-separator,
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-visual-separator {
+  .ef-meal-card:has(.ef-meal-title:is([data-meal="breakfast"], [data-meal="evening-snack"])) .ef-visual-separator {
     margin: 8px 0;
   }
 
-  .ef-meal-card:has(.ef-meal-title[data-meal="breakfast"]) .ef-meal-sections,
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-meal-sections {
-    padding-bottom: 0;
+  /* Cheat Meal Card - Updated to white background with sparrow overflow */
+  .ef-cheat-meal-card-full-width {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e5e7eb;
+    position: relative;
+    overflow: visible;
   }
 
-  /* --- FINAL FIX: Remove trailing whitespace for Pre-Breakfast & Evening Snack --- */
-  .ef-meal-card[data-meal-type="pre-breakfast"],
-  .ef-meal-card[data-meal-type="evening-snack"] {
-    padding-bottom: 0 !important;
-    /* remove any bottom padding on the card */
+  .ef-cheat-content-full {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
   }
 
-  .ef-meal-card[data-meal-type="pre-breakfast"] .ef-content-area,
-  .ef-meal-card[data-meal-type="evening-snack"] .ef-content-area,
-  .ef-meal-card[data-meal-type="pre-breakfast"] .ef-meal-sections,
-  .ef-meal-card[data-meal-type="evening-snack"] .ef-meal-sections {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+  .ef-cheat-text-content {
+    flex: 1;
   }
 
-  .ef-meal-card[data-meal-type="pre-breakfast"] .ef-food-item-no-card:last-child,
-  .ef-meal-card[data-meal-type="evening-snack"] .ef-food-item-no-card:last-child {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+  .ef-cheat-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 12px 0;
+  }
+
+  .ef-cheat-description {
+    font-size: 14px;
+    color: #374151;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .ef-cheat-image {
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
+  }
+
+  .ef-sparrow-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    position: relative;
+    right: -20px;
+    top: -10px;
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.1));
   }
 }
