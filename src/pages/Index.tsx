@@ -163,75 +163,37 @@ const Index = () => {
         </div>
 
         {/* Card 5: Dinner */}
-        <div className="ef-meal-card">
-          <h3 className="ef-meal-title">Dinner</h3>
-          <div className="ef-meal-time">
-            <span>19:30 – 21:00</span>
-            <span className="ef-meal-kcal">400 Kcal</span>
-          </div>
-          
-          <div className="ef-meal-sections">
-            <div className="ef-meal-section">
-              <div className="ef-content-area">
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Tomato tur dal</div>
-                    <div className="ef-food-portion">1 Katori (130g)</div>
-                  </div>
-                  <span className="ef-kcal">101 Kcal</span>
+          <div className="ef-meal-card">
+            <h3 className="ef-meal-title">Dinner</h3>
+            <div className="ef-meal-time">
+              <span>19:30 – 21:00</span>
+              <span>400 Kcal</span>
+            </div>
+            
+            <div className="ef-meal-sections">
+              <div className="ef-meal-section">
+                <h4 className="ef-section-title">Main Meals</h4>
+                <div className="ef-content-area">
+                  <div className="ef-food-item">Tomato tur dal – 1 Katori (130g) <span className="ef-kcal">101 Kcal</span></div>
+                  <div className="ef-food-item">Ghiya chana dal – 1 Katori (128g) <span className="ef-kcal">90 Kcal</span></div>
+                  <div className="ef-food-item">Urad dal – 1 Katori (125g) <span className="ef-kcal">101 Kcal</span></div>
+                  <div className="ef-food-item">Brown rice cooked – 1 Bowl (164g) <span className="ef-kcal">185 Kcal</span></div>
+                  <div className="ef-food-item">Dal paneer – 1 Katori (129g) <span className="ef-kcal">155 Kcal</span></div>
+                  <div className="ef-food-item">Moong dal – 1 Katori (127g) <span className="ef-kcal">117 Kcal</span></div>
                 </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Ghiya chana dal</div>
-                    <div className="ef-food-portion">1 Katori (128g)</div>
-                  </div>
-                  <span className="ef-kcal">90 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Urad dal</div>
-                    <div className="ef-food-portion">1 Katori (125g)</div>
-                  </div>
-                  <span className="ef-kcal">101 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Brown rice cooked</div>
-                    <div className="ef-food-portion">1 Bowl (164g)</div>
-                  </div>
-                  <span className="ef-kcal">185 Kcal</span>
-                </div>
-                
-                {/* Visual separator line */}
-                <div className="ef-visual-separator"></div>
-                
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Tomato cucumber onion raita</div>
-                    <div className="ef-food-portion">1 Bowl (158g)</div>
-                  </div>
-                  <span className="ef-kcal">64 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Cucumber salad</div>
-                    <div className="ef-food-portion">1 Bowl (121g)</div>
-                  </div>
-                  <span className="ef-kcal">16 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Onion salad (Pyaaz ka lachcha)</div>
-                    <div className="ef-food-portion">1 Bowl (118g)</div>
-                  </div>
-                  <span className="ef-kcal">48 Kcal</span>
+              </div>
+              <div className="ef-meal-section">
+                <h4 className="ef-section-title">Sides</h4>
+                <div className="ef-content-area">
+                  <div className="ef-food-item">Tomato cucumber onion raita – 1 Bowl (158g) <span className="ef-kcal">64 Kcal</span></div>
+                  <div className="ef-food-item">Cucumber salad – 1 Bowl (121g) <span className="ef-kcal">16 Kcal</span></div>
+                  <div className="ef-food-item">Onion salad (Pyaaz ka lachcha) – 1 Bowl (118g) <span className="ef-kcal">48 Kcal</span></div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
+        </div>
       <div className="sparrow-chat-container">
         {/* The sparrow image */}
         <div className="sparrow-image-container">
