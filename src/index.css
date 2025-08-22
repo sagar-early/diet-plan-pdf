@@ -570,17 +570,6 @@ All colors MUST be HSL.
       gap: 12px;
       text-align: center;
     }
-
-    .ef-macros-clean {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 16px;
-    }
-
-    .ef-macro-labels-horizontal {
-      justify-content: flex-start;
-      gap: 16px;
-    }
   }
 
   /* Print Styles */
