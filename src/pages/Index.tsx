@@ -239,18 +239,36 @@ const Index = () => {
             </div>
             
             {/* Visual separator line */}
-             <div className="ef-meal-section">
-                <h4 className="ef-section-title">Sides</h4>
-                <div className="ef-content-area">
-                  <div className="ef-food-item">Tomato cucumber onion raita – 1 Bowl (158g) <span className="ef-kcal">64 Kcal</span></div>
-                  <div className="ef-food-item">Cucumber salad – 1 Bowl (121g) <span className="ef-kcal">16 Kcal</span></div>
-                  <div className="ef-food-item">Onion salad (Pyaaz ka lachcha) – 1 Bowl (118g) <span className="ef-kcal">48 Kcal</span></div>
+            <div className="ef-visual-separator"></div>
+            
+            <div className="ef-meal-section">
+              <div className="ef-content-area">
+                <div className="ef-food-item-no-card">
+                  <div className="ef-food-content">
+                    <div className="ef-food-name">Tomato cucumber onion raita</div>
+                    <div className="ef-food-portion">1 Bowl (158g)</div>
+                  </div>
+                  <span className="ef-kcal">64 Kcal</span>
+                </div>
+                <div className="ef-food-item-no-card">
+                  <div className="ef-food-content">
+                    <div className="ef-food-name">Cucumber salad</div>
+                    <div className="ef-food-portion">1 Bowl (121g)</div>
+                  </div>
+                  <span className="ef-kcal">16 Kcal</span>
+                </div>
+                <div className="ef-food-item-no-card">
+                  <div className="ef-food-content">
+                    <div className="ef-food-name">Onion salad (Pyaaz ka lachcha)</div>
+                    <div className="ef-food-portion">1 Bowl (118g)</div>
+                  </div>
+                  <span className="ef-kcal">48 Kcal</span>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
+      </div>
 
       <div className="sparrow-chat-container">
         {/* The sparrow image */}
