@@ -530,31 +530,7 @@ All colors MUST be HSL.
     }
   }
 
-  /* Specific styles for Pre-Breakfast and Evening Snack cards to remove bottom whitespace */
-  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) .ef-content-area,
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-content-area {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-
-  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) .ef-meal-sections,
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-meal-sections {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-
-  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]),
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) {
-    padding-bottom: 16px;
-  }
-
-  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) .ef-food-item-no-card:last-child,
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-food-item-no-card:last-child {
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  /* Compact styles for Breakfast and Evening Snack sections */
+  /* --- Spacing adjustments for specific sections (keep compact look) --- */
   .ef-meal-card:has(.ef-meal-title[data-meal="breakfast"]) .ef-content-area,
   .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-content-area {
     gap: 0;
@@ -581,20 +557,22 @@ All colors MUST be HSL.
     padding-bottom: 0;
   }
 
-  /* --- LATEST FIX: kill trailing whitespace after last item in Pre-Breakfast & Evening Snack --- */
+  /* --- FINAL FIX: Remove trailing whitespace for Pre-Breakfast & Evening Snack --- */
   .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]),
   .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) {
+    padding-bottom: 0 !important;   /* remove any bottom padding on the card */
+  }
+
+  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) .ef-content-area,
+  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-content-area,
+  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) .ef-meal-sections,
+  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-meal-sections {
+    margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
 
   .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) .ef-food-item-no-card:last-child,
   .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-food-item-no-card:last-child {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-
-  .ef-meal-card:has(.ef-meal-title[data-meal="pre-breakfast"]) .ef-content-area,
-  .ef-meal-card:has(.ef-meal-title[data-meal="evening-snack"]) .ef-content-area {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
