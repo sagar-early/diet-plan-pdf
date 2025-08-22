@@ -379,6 +379,22 @@ const Index = () => {
         </div>
       </div>
 
+    <div className="sparrow-chat-container">
+  {/* The chat bubble containing the text */}
+  <div className="chat-bubble">
+    <h3>What's Your Weight?</h3>
+  </div>
+
+  {/* The sparrow image */}
+  <div className="sparrow-image-container">
+    <img 
+      src="/lovable-uploads/629dad21-2eb8-42da-a4ed-cfdfb41bc83d.png" 
+      alt="Sparrow" 
+      className="sparrow-image" 
+    />
+  </div>
+</div>
+
       {/* Footer Card - Full Width */}
       <div className="ef-footer-card-full-width bg-[#393f2d]">
         <div className="ef-footer-content">

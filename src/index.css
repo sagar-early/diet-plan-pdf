@@ -146,6 +146,64 @@ All colors MUST be HSL.
     text-align: left;
   }
 
+/* Main container to position the bubble and sparrow relative to each other */
+.sparrow-chat-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 40px 0; /* Add some margin for spacing */
+  /* Adjust width as needed, or let it be determined by content */
+  width: fit-content; 
+}
+
+/* The white, rounded rectangular speech bubble */
+.chat-bubble {
+  background: #ffffff;
+  border-radius: 12px; /* Softer rounded corners */
+  padding: 20px 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  position: relative; /* Required for positioning the triangle tail */
+  margin-right: 60px; /* Space between bubble and sparrow */
+}
+
+/* The triangular tail of the chat bubble */
+.chat-bubble::after {
+  content: ''; /* Pseudo-elements must have a content property */
+  position: absolute;
+  top: 50%; /* Position it in the middle vertically */
+  right: -10px; /* Attach it to the right edge, slightly overlapping */
+  transform: translateY(-50%); /* Center it perfectly */
+  
+  /* The triangle trick using borders */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #ffffff; /* This creates the right-pointing triangle */
+}
+
+.chat-bubble h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+}
+
+/* Container for the sparrow image */
+.sparrow-image-container {
+  position: absolute;
+  right: 0; /* Align it to the far right of the main container */
+  top: 50%;
+  transform: translateY(-50%); /* Center it vertically */
+  z-index: 10; /* Ensure it's above the bubble's tail */
+}
+
+.sparrow-image {
+  width: 80px; /* Adjust size as needed */
+  height: 80px;
+  object-fit: contain;
+}
   /* Full-width Header Card - Remove padding */
   .ef-header-card-full-width {
     background: #e9ecef;
