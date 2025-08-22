@@ -78,67 +78,18 @@ const Index = () => {
           <div className="ef-meal-sections">
             <div className="ef-meal-section">
               <div className="ef-content-area">
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Chicken omelette</div>
-                    <div className="ef-food-portion">3 Egg Whites (120g)</div>
-                  </div>
-                  <span className="ef-kcal">203 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Cornflakes chivda</div>
-                    <div className="ef-food-portion">1 Bowl (40g)</div>
-                  </div>
-                  <span className="ef-kcal">194 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Moong dal chilla</div>
-                    <div className="ef-food-portion">2 Piece (110g)</div>
-                  </div>
-                  <span className="ef-kcal">196 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Brown bread chilla</div>
-                    <div className="ef-food-portion">2 Piece (100g)</div>
-                  </div>
-                  <span className="ef-kcal">276 Kcal</span>
-                </div>
+                <div className="ef-food-item">Chicken omelette – 3 Egg Whites (120g) <span className="ef-kcal">203 Kcal</span></div>
+                  <div className="ef-food-item">Cornflakes chivda – 1 Bowl (40g) <span className="ef-kcal">194 Kcal</span></div>
+                  <div className="ef-food-item">Moong dal chilla – 2 Piece (110g) <span className="ef-kcal">196 Kcal</span></div>
+                  <div className="ef-food-item">Brown bread chilla – 2 Piece (100g) <span className="ef-kcal">276 Kcal</span></div>
                 
                 {/* Visual separator line */}
                 <div className="ef-visual-separator"></div>
                 
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Fruit salad</div>
-                    <div className="ef-food-portion">1 Bowl (100g)</div>
-                  </div>
-                  <span className="ef-kcal">66 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Apple</div>
-                    <div className="ef-food-portion">1 Number (100g)</div>
-                  </div>
-                  <span className="ef-kcal">52 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Coffee (with milk)</div>
-                    <div className="ef-food-portion">1 Cup (150ml)</div>
-                  </div>
-                  <span className="ef-kcal">86 Kcal</span>
-                </div>
-                <div className="ef-food-item-no-card">
-                  <div className="ef-food-content">
-                    <div className="ef-food-name">Nestea lemon</div>
-                    <div className="ef-food-portion">1 Cup (150ml)</div>
-                  </div>
-                  <span className="ef-kcal">54 Kcal</span>
-                </div>
-              </div>
+                <div className="ef-food-item">Fruit salad – 1 Bowl (100g) <span className="ef-kcal">66 Kcal</span></div>
+                  <div className="ef-food-item">Apple – 1 Number (100g) <span className="ef-kcal">52 Kcal</span></div>
+                  <div className="ef-food-item">Coffee (with milk) – 1 Cup (150ml) <span className="ef-kcal">86 Kcal</span></div>
+                  <div className="ef-food-item">Nestea lemon – 1 Cup (150ml) <span className="ef-kcal">54 Kcal</span></div>
             </div>
           </div>
         </div>
