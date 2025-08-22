@@ -235,7 +235,7 @@ All colors MUST be HSL.
   /* Meal Cards Container */
   .ef-meal-cards-container {
     display: grid;
-    gap: 16px;
+    gap: 10px;
     margin-bottom: 24px;
   }
 
