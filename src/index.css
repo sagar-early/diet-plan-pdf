@@ -146,65 +146,65 @@ All colors MUST be HSL.
     text-align: left;
   }
 
-/* Main container to position the bubble and sparrow relative to each other */
+/* Main container: Use Flexbox to position items side-by-side */
 .sparrow-chat-container {
-  position: relative;
   display: flex;
-  align-items: center;
+  align-items: center; /* Vertically aligns the sparrow and the bubble */
+  gap: 25px; /* Creates the margin between the sparrow and the bubble */
   margin: 40px 0;
-  width: fit-content;
-}
-
-/* The white, rounded rectangular speech bubble */
-.chat-bubble {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 20px 24px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  border: 1px solid #f0f0f0;
-  position: relative;
-  /* CHANGED: Margin is now on the left to create space for the sparrow */
-  margin-left: 60px; 
-}
-
-/* The triangular tail of the chat bubble */
-.chat-bubble::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  /* CHANGED: Attach the tail to the left edge */
-  left: -10px; 
-  transform: translateY(-50%);
-  
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  /* CHANGED: The solid border is now on the right to make the triangle point left */
-  border-right: 10px solid #ffffff; 
-}
-
-.chat-bubble h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #374151;
-  margin: 0;
 }
 
 /* Container for the sparrow image */
 .sparrow-image-container {
-  position: absolute;
-  /* CHANGED: Align it to the far left of the main container */
-  left: 0; 
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
+  flex-shrink: 0; /* Prevents the image from shrinking */
 }
 
 .sparrow-image {
   width: 80px;
   height: 80px;
   object-fit: contain;
+  display: block; /* Removes extra space below the image */
+}
+
+/* The cheat meal card, acting as the chat bubble */
+.ef-cheat-meal-card-full-width {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  position: relative; /* Crucial for positioning the triangular tail */
+}
+
+/* The triangular tail of the chat bubble */
+.ef-cheat-meal-card-full-width::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  
+  /* Position the tail to the left of the bubble */
+  left: -10px; 
+  transform: translateY(-50%);
+  
+  /* Create the triangle shape pointing left */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #ffffff; /* White triangle pointing left */
+}
+
+/* Basic text styling inside the card */
+.ef-cheat-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 8px 0;
+}
+
+.ef-cheat-description {
+  margin: 0;
+  color: #4b5563;
 }
   /* Full-width Header Card - Remove padding */
   .ef-header-card-full-width {
@@ -325,7 +325,7 @@ All colors MUST be HSL.
 
 /* Meal Cards Container */
 .ef-meal-cards-container {
-  margin-bottom: 24px; /* Keep the bottom margin */
+  margin-bottom: 8px; /* Keep the bottom margin */
 }
 
 /* Desktop: 2 columns, Mobile: 1 column */
@@ -459,19 +459,6 @@ All colors MUST be HSL.
     background: #e0e0e0;
     margin: 16px 0;
     width: 100%;
-  }
-
-  /* Cheat Meal Card - White background with sparrow overflow */
-  .ef-cheat-meal-card-full-width {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 24px;
-    width: 100%;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    border: 2px solid #e5e7eb;
-    position: relative;
-    overflow: visible;
   }
 
   .ef-cheat-content-full {
