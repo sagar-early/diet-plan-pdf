@@ -367,7 +367,8 @@ const Index = () => {
       <div className="ef-cheat-meal-card-full-width">
         <div className="ef-cheat-content-full">
           <div className="ef-cheat-text-content">
-            <h3 className="ef-cheat-title">Cheat Meal (Sunday-Lunch)</h3>
+            <h3 className="ef-cheat-title">Cheat Meal
+ (Sunday-Lunch)</h3>
             <p className="ef-cheat-description">
               Enjoy your Sunday brunch at your favourite place, make sure to keep it within 300kcal
             </p>
