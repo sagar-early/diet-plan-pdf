@@ -1,4 +1,3 @@
-
 const Index = () => {
   return <main className="ef-page bg-[t#] bg-[#faf8f1]">
       {/* Full-width header card */}
@@ -289,11 +288,7 @@ const Index = () => {
       <div className="sparrow-chat-container">
         {/* The sparrow image */}
         <div className="sparrow-image-container">
-          <img 
-            src="/lovable-uploads/629dad21-2eb8-42da-a4ed-cfdfb41bc83d.png" 
-            alt="Sparrow" 
-            className="sparrow-image" 
-          />
+          <img src="/lovable-uploads/629dad21-2eb8-42da-a4ed-cfdfb41bc83d.png" alt="Sparrow" className="sparrow-image" />
         </div>
         {/* The chat bubble containing the text */}
         <div className="ef-cheat-meal-card-full-width">
@@ -312,12 +307,9 @@ const Index = () => {
           <div className="ef-footer-logo">
             <img src="/lovable-uploads/0518c066-6a07-4c02-a451-7aa1394cfa2a.png" alt="Early logo" className="ef-footer-logo-image" />
           </div>
-          <div className="ef-footer-text">
-            Visit our website www.early.fit
-          </div>
+          
         </div>
       </div>
     </main>;
 };
-
 export default Index;
