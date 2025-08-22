@@ -151,36 +151,37 @@ All colors MUST be HSL.
   position: relative;
   display: flex;
   align-items: center;
-  margin: 40px 0; /* Add some margin for spacing */
-  /* Adjust width as needed, or let it be determined by content */
-  width: fit-content; 
+  margin: 40px 0;
+  width: fit-content;
 }
 
 /* The white, rounded rectangular speech bubble */
 .chat-bubble {
   background: #ffffff;
-  border-radius: 12px; /* Softer rounded corners */
+  border-radius: 12px;
   padding: 20px 24px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   border: 1px solid #f0f0f0;
-  position: relative; /* Required for positioning the triangle tail */
-  margin-right: 60px; /* Space between bubble and sparrow */
+  position: relative;
+  /* CHANGED: Margin is now on the left to create space for the sparrow */
+  margin-left: 60px; 
 }
 
 /* The triangular tail of the chat bubble */
 .chat-bubble::after {
-  content: ''; /* Pseudo-elements must have a content property */
+  content: '';
   position: absolute;
-  top: 50%; /* Position it in the middle vertically */
-  right: -10px; /* Attach it to the right edge, slightly overlapping */
-  transform: translateY(-50%); /* Center it perfectly */
+  top: 50%;
+  /* CHANGED: Attach the tail to the left edge */
+  left: -10px; 
+  transform: translateY(-50%);
   
-  /* The triangle trick using borders */
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 10px solid #ffffff; /* This creates the right-pointing triangle */
+  /* CHANGED: The solid border is now on the right to make the triangle point left */
+  border-right: 10px solid #ffffff; 
 }
 
 .chat-bubble h3 {
@@ -193,14 +194,15 @@ All colors MUST be HSL.
 /* Container for the sparrow image */
 .sparrow-image-container {
   position: absolute;
-  right: 0; /* Align it to the far right of the main container */
+  /* CHANGED: Align it to the far left of the main container */
+  left: 0; 
   top: 50%;
-  transform: translateY(-50%); /* Center it vertically */
-  z-index: 10; /* Ensure it's above the bubble's tail */
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
 .sparrow-image {
-  width: 80px; /* Adjust size as needed */
+  width: 80px;
   height: 80px;
   object-fit: contain;
 }
