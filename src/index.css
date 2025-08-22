@@ -259,7 +259,6 @@ All colors MUST be HSL.
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border: 1px solid hsl(var(--ef-green-200));
     display: flex;
-    margin-bottom: 35px;
     flex-direction: column;
   }
 
