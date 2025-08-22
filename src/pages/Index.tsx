@@ -141,6 +141,11 @@ const Index = () => {
         </div>
       </div>
 
+      {/* Page 2 */}
+      <div className="ef-page-content ef-page-2">
+        {/* Remaining 2 meal cards */}
+        <div className="ef-meal-cards-grid">
+
         {/* Card 5: Dinner */}
         <div className="ef-meal-card">
           <h3 className="ef-meal-title">Dinner</h3>
