@@ -1,7 +1,5 @@
-
 const Index = () => {
-  return (
-    <main className="ef-page bg-[t#] bg-[#faf8f1]">
+  return <main className="ef-page bg-[t#] bg-[#faf8f1]">
       {/* Full-width header card */}
       <div className="ef-header-card-full-width bg-[#393f2d]">
         <h1 className="ef-header-title-centered text-white">Diet Plan</h1>
@@ -130,7 +128,7 @@ const Index = () => {
           
           <div className="ef-meal-sections">
             <div className="ef-meal-section">
-              <h4 className="ef-section-title">Sides</h4>
+              
               <div className="ef-content-area">
                 <div className="ef-food-item">Roasted makhana with Indian spices – 1 Bowl (10g) <span className="ef-kcal">46 Kcal</span></div>
                 <div className="ef-food-item">Fruit salad – 1 Bowl (140g) <span className="ef-kcal">93 Kcal</span></div>
@@ -151,7 +149,7 @@ const Index = () => {
           
           <div className="ef-meal-sections">
             <div className="ef-meal-section">
-              <h4 className="ef-section-title">Main Meals</h4>
+              
               <div className="ef-content-area">
                 <div className="ef-food-item">Tomato tur dal – 1 Katori (130g) <span className="ef-kcal">101 Kcal</span></div>
                 <div className="ef-food-item">Ghiya chana dal – 1 Katori (128g) <span className="ef-kcal">90 Kcal</span></div>
@@ -166,7 +164,7 @@ const Index = () => {
             <div className="ef-visual-separator"></div>
             
             <div className="ef-meal-section">
-              <h4 className="ef-section-title">Sides</h4>
+              
               <div className="ef-content-area">
                 <div className="ef-food-item">Tomato cucumber onion raita – 1 Bowl (158g) <span className="ef-kcal">64 Kcal</span></div>
                 <div className="ef-food-item">Cucumber salad – 1 Bowl (121g) <span className="ef-kcal">16 Kcal</span></div>
@@ -201,8 +199,6 @@ const Index = () => {
           </div>
         </div>
       </div>
-    </main>
-  );
+    </main>;
 };
-
 export default Index;
