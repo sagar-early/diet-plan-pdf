@@ -18,7 +18,7 @@ const Index = () => {
           {/* Macronutrient Section - Right */}
           <div className="ef-macro-labels-horizontal">
             <div className="ef-macro-label-item">
-              <span className="ef-macro-dot protein">●</span>
+              {/* <span className="ef-macro-dot protein">●</span> */}
               <div>
                 <div className="ef-macro-text">Protein</div>
                 <div className="ef-macro-value">80g</div>
