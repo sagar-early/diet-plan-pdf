@@ -1,3 +1,4 @@
+
 const Index = () => {
   return <main className="ef-page bg-[t#] bg-[#faf8f1]">
       {/* Full-width header card */}
@@ -45,7 +46,7 @@ const Index = () => {
       <div className="ef-meal-cards-container">
         {/* Card 1: Pre-Breakfast */}
         <div className="ef-meal-card">
-          <h3 className="ef-meal-title">Pre-Breakfast</h3>
+          <h3 className="ef-meal-title" data-meal="pre-breakfast">Pre-Breakfast</h3>
           <div className="ef-meal-time">
             <span>06:30 – 07:00</span>
             <span className="ef-meal-kcal">80 Kcal</span>
@@ -61,6 +62,7 @@ const Index = () => {
                   <div className="ef-food-item">Mint tea without sugar – 1 Cup (150ml) <span className="ef-kcal">1 Kcal</span></div>
                   <div className="ef-food-item">Kombucha (fermented tea) – 1 Cup (150ml) <span className="ef-kcal">36 Kcal</span></div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -334,29 +336,25 @@ const Index = () => {
         </div>
       </div>
 
-    <div className="sparrow-chat-container">
-
-      {/* The sparrow image */}
-  <div className="sparrow-image-container">
-    <img 
-      src="/lovable-uploads/629dad21-2eb8-42da-a4ed-cfdfb41bc83d.png" 
-      alt="Sparrow" 
-      className="sparrow-image" 
-    />
-  </div>
-  {/* The chat bubble containing the text */}
-  <div className="chat-bubble">
-    <div className="ef-cheat-text-content">
-            <h3 className="ef-cheat-title">Cheat Meal
- (Sunday-Lunch)</h3>
+      <div className="sparrow-chat-container">
+        {/* The sparrow image */}
+        <div className="sparrow-image-container">
+          <img 
+            src="/lovable-uploads/629dad21-2eb8-42da-a4ed-cfdfb41bc83d.png" 
+            alt="Sparrow" 
+            className="sparrow-image" 
+          />
+        </div>
+        {/* The chat bubble containing the text */}
+        <div className="chat-bubble">
+          <div className="ef-cheat-text-content">
+            <h3 className="ef-cheat-title">Cheat Meal (Sunday-Lunch)</h3>
             <p className="ef-cheat-description">
               Enjoy your Sunday brunch at your favourite place, make sure to keep it within 300kcal
             </p>
           </div>
-  </div>
-
-  
-</div>
+        </div>
+      </div>
 
       {/* Footer Card - Full Width */}
       <div className="ef-footer-card-full-width bg-[#393f2d]">
@@ -371,4 +369,5 @@ const Index = () => {
       </div>
     </main>;
 };
+
 export default Index;
