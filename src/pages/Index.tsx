@@ -307,9 +307,7 @@ const Index = () => {
           <div className="ef-footer-logo">
             <img src="/lovable-uploads/0518c066-6a07-4c02-a451-7aa1394cfa2a.png" alt="Early logo" className="ef-footer-logo-image" />
           </div>
-          <div className="ef-footer-text bg-slate-50">
-            Visit our website www.early.fit
-          </div>
+          
         </div>
       </div>
     </main>;
