@@ -160,8 +160,8 @@ All colors MUST be HSL.
 }
 
 .sparrow-image {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
   display: block; /* Removes extra space below the image */
 }
@@ -170,7 +170,7 @@ All colors MUST be HSL.
 .ef-cheat-meal-card-full-width {
   background: #ffffff;
   border-radius: 16px;
-  padding: 24px;
+  padding: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   border: 1px solid #e5e7eb;
   position: relative; /* Crucial for positioning the triangular tail */
