@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
 
@@ -39,19 +39,30 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     /* Early Diet Plan Colors - Updated to match new specifications */
-    --ef-green-900: 77 24% 22%; /* #434a35 */
-    --ef-green-600: 75 15% 55%; /* #798660 */
-    --ef-green-500: 79 18% 65%; /* #abb597 */
-    --ef-green-200: 80 22% 84%; /* #dbdfd2 */
-    
-    --ef-lime: 76 80% 45%; /* #9cd312 - Updated to match new spec */
-    --ef-purple: 304 21% 66%; /* #927b9e */
-    
-    --ef-cream: 60 59% 96%; /* #faf8f1 */
-    --ef-ivory: 52 73% 95%; /* #fff4e2 */
-    --ef-cloud: 207 21% 86%; /* #dde2e8 */
-    --ef-sand: 37 45% 82%; /* #efd7b5 */
-    --ef-espresso: 30 52% 16%; /* #3a1f12 */
+    --ef-green-900: 77 24% 22%;
+    /* #434a35 */
+    --ef-green-600: 75 15% 55%;
+    /* #798660 */
+    --ef-green-500: 79 18% 65%;
+    /* #abb597 */
+    --ef-green-200: 80 22% 84%;
+    /* #dbdfd2 */
+
+    --ef-lime: 76 80% 45%;
+    /* #9cd312 - Updated to match new spec */
+    --ef-purple: 304 21% 66%;
+    /* #927b9e */
+
+    --ef-cream: 60 59% 96%;
+    /* #faf8f1 */
+    --ef-ivory: 52 73% 95%;
+    /* #fff4e2 */
+    --ef-cloud: 207 21% 86%;
+    /* #dde2e8 */
+    --ef-sand: 37 45% 82%;
+    /* #efd7b5 */
+    --ef-espresso: 30 52% 16%;
+    /* #3a1f12 */
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -106,6 +117,7 @@ All colors MUST be HSL.
   @page {
     margin: 0;
   }
+
   body {
     margin: 0;
   }
@@ -225,7 +237,7 @@ All colors MUST be HSL.
     color: #444;
     font-weight: 600;
   }
-  
+
   .ef-macro-value {
     font-size: 14px;
     color: #666;
@@ -366,14 +378,17 @@ All colors MUST be HSL.
     width: 100%;
   }
 
-  /* Cheat Meal Card - Full Width */
+  /* Cheat Meal Card - White background with sparrow overflow */
   .ef-cheat-meal-card-full-width {
-    background: linear-gradient(135deg, #9cd312, #927b9e);
+    background: #ffffff;
     border-radius: 16px;
     padding: 24px;
     width: 100%;
     margin-bottom: 20px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e5e7eb;
+    position: relative;
+    overflow: visible;
   }
 
   .ef-cheat-content-full {
@@ -381,34 +396,42 @@ All colors MUST be HSL.
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    position: relative;
   }
 
   .ef-cheat-text-content {
     flex: 1;
+    text-align: left;
   }
 
   .ef-cheat-title {
     font-size: 20px;
     font-weight: 700;
-    color: hsl(var(--ef-espresso));
+    color: #1f2937;
     margin: 0 0 12px 0;
   }
 
   .ef-cheat-description {
     font-size: 14px;
-    color: hsl(var(--ef-espresso));
+    color: #374151;
     margin: 0;
     line-height: 1.4;
   }
 
   .ef-cheat-image {
     flex-shrink: 0;
+    position: relative;
+    z-index: 10;
   }
 
   .ef-sparrow-image {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
+    position: relative;
+    right: -20px;
+    top: -10px;
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.1));
   }
 
   /* Footer Card - Full Width - Remove padding */
@@ -465,6 +488,10 @@ All colors MUST be HSL.
       text-align: center;
     }
 
+    .ef-cheat-text-content {
+      text-align: center;
+    }
+
     .ef-footer-content {
       flex-direction: column;
       gap: 12px;
@@ -488,12 +515,12 @@ All colors MUST be HSL.
     @page {
       margin: 2px;
     }
-    
+
     body {
       margin: 0;
       padding: 0;
     }
-    
+
     .ef-page {
       max-width: none;
       margin: 0;
@@ -524,58 +551,14 @@ All colors MUST be HSL.
     margin: 8px 0;
   }
 
-  /* Cheat Meal Card - Updated to white background with sparrow overflow */
-  .ef-cheat-meal-card-full-width {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 24px;
-    width: 100%;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    border: 2px solid #e5e7eb;
-    position: relative;
-    overflow: visible;
+  /* The most specific rule to target the last food item. */
+  .ef-meal-card .ef-food-item-no-card:last-child {
+    padding-bottom: 0 !important;
   }
 
-  .ef-cheat-content-full {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    position: relative;
-  }
-
-  .ef-cheat-text-content {
-    flex: 1;
-  }
-
-  .ef-cheat-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: #1f2937;
-    margin: 0 0 12px 0;
-  }
-
-  .ef-cheat-description {
-    font-size: 14px;
-    color: #374151;
-    margin: 0;
-    line-height: 1.4;
-  }
-
-  .ef-cheat-image {
-    flex-shrink: 0;
-    position: relative;
-    z-index: 10;
-  }
-
-  .ef-sparrow-image {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    position: relative;
-    right: -20px;
-    top: -10px;
-    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.1));
+  /* Also, explicitly remove padding on the meal card for these specific meals */
+  .ef-meal-card[data-meal-type="pre-breakfast"],
+  .ef-meal-card[data-meal-type="evening-snack"] {
+    padding-bottom: 0 !important;
   }
 }
