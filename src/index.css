@@ -248,17 +248,17 @@ All colors MUST be HSL.
 @media (max-width: 600px) {
   /* Reduce the gap between the calorie and macro sections */
   .ef-macros-clean {
-    gap: 4px; /* Was 20px */
+    gap: 8px; /* Was 20px */
   }
 
   /* Reduce the gap between the individual macro items (Protein, Carbs, etc.) */
   .ef-macro-labels-horizontal {
-    gap: 3px; /* Was 24px - this is the most impactful change */
+    gap: 6px; /* Was 24px - this is the most impactful change */
   }
   
   /* Optional: Reduce the padding inside the main container to gain more space */
   .ef-nutrition-summary-clean {
-    padding: 4px; /* Was 20px */
+    padding: 8px; /* Was 20px */
   }
 }
 
