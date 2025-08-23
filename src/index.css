@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -446,7 +447,7 @@ All colors MUST be HSL.
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    color: hsl(var(--ef-espresso));
+    color: hsl(0 0% 0%);
   }
 
   .ef-food-item-card:hover {
